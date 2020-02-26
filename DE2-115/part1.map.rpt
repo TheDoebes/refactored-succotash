@@ -1,6 +1,6 @@
 Analysis & Synthesis report for part1
-Sun Feb 16 18:49:03 2020
-Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
+Sun Feb 23 19:14:50 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
 
 
 ---------------------
@@ -43,140 +43,139 @@ Quartus Prime Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
  35. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
  36. altpll Parameter Settings by Entity Instance
  37. scfifo Parameter Settings by Entity Instance
- 38. Port Connectivity Checks: "audio_codec:codec"
- 39. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller"
- 40. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
- 41. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
- 42. Post-Synthesis Netlist Statistics for Top Partition
- 43. Elapsed Time Per Partition
- 44. Analysis & Synthesis Messages
+ 38. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller"
+ 39. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
+ 40. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
+ 41. Post-Synthesis Netlist Statistics for Top Partition
+ 42. Elapsed Time Per Partition
+ 43. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
 to the terms and conditions of the Intel Program License 
 Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel MegaCore Function License Agreement, or other 
-applicable license agreement, including, without limitation, 
-that your use is for the sole purpose of programming logic 
-devices manufactured by Intel and sold by Intel or its 
-authorized distributors.  Please refer to the applicable 
-agreement for further details.
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 16 18:49:02 2020       ;
-; Quartus Prime Version              ; 16.1.2 Build 203 01/18/2017 SJ Lite Edition ;
-; Revision Name                      ; part1                                       ;
-; Top-level Entity Name              ; part1                                       ;
-; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 516                                         ;
-;     Total combinational functions  ; 510                                         ;
-;     Dedicated logic registers      ; 290                                         ;
-; Total registers                    ; 290                                         ;
-; Total pins                         ; 11                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 11,264                                      ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 1                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                                     ;
++------------------------------------+-------------------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sun Feb 23 19:14:50 2020                       ;
+; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition ;
+; Revision Name                      ; part1                                                       ;
+; Top-level Entity Name              ; part1                                                       ;
+; Family                             ; Cyclone IV E                                                ;
+; Total logic elements               ; 528                                                         ;
+;     Total combinational functions  ; 522                                                         ;
+;     Dedicated logic registers      ; 293                                                         ;
+; Total registers                    ; 293                                                         ;
+; Total pins                         ; 13                                                          ;
+; Total virtual pins                 ; 0                                                           ;
+; Total memory bits                  ; 12,288                                                      ;
+; Embedded Multiplier 9-bit elements ; 0                                                           ;
+; Total PLLs                         ; 1                                                           ;
++------------------------------------+-------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Settings                                                                                        ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Option                                                                     ; Setting            ; Default Value      ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; EP4CE115F29C7      ;                    ;
-; Top-level entity name                                                      ; part1              ; part1              ;
-; Family name                                                                ; Cyclone IV E       ; Cyclone V          ;
-; Use smart compilation                                                      ; Off                ; Off                ;
-; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
-; Enable compact report table                                                ; Off                ; Off                ;
-; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
-; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
-; Preserve fewer node names                                                  ; On                 ; On                 ;
-; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
-; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
-; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
-; State Machine Processing                                                   ; Auto               ; Auto               ;
-; Safe State Machine                                                         ; Off                ; Off                ;
-; Extract Verilog State Machines                                             ; On                 ; On                 ;
-; Extract VHDL State Machines                                                ; On                 ; On                 ;
-; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
-; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
-; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
-; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
-; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
-; Parallel Synthesis                                                         ; On                 ; On                 ;
-; DSP Block Balancing                                                        ; Auto               ; Auto               ;
-; NOT Gate Push-Back                                                         ; On                 ; On                 ;
-; Power-Up Don't Care                                                        ; On                 ; On                 ;
-; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
-; Remove Duplicate Registers                                                 ; On                 ; On                 ;
-; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
-; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
-; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
-; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
-; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
-; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
-; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
-; Optimization Technique                                                     ; Balanced           ; Balanced           ;
-; Carry Chain Length                                                         ; 70                 ; 70                 ;
-; Auto Carry Chains                                                          ; On                 ; On                 ;
-; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
-; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
-; Auto ROM Replacement                                                       ; On                 ; On                 ;
-; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
-; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
-; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
-; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
-; Strict RAM Replacement                                                     ; Off                ; Off                ;
-; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
-; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
-; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
-; Auto Resource Sharing                                                      ; Off                ; Off                ;
-; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
-; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
-; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
-; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
-; Report Parameter Settings                                                  ; On                 ; On                 ;
-; Report Source Assignments                                                  ; On                 ; On                 ;
-; Report Connectivity Checks                                                 ; On                 ; On                 ;
-; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
-; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
-; HDL message level                                                          ; Level2             ; Level2             ;
-; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
-; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
-; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
-; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
-; Clock MUX Protection                                                       ; On                 ; On                 ;
-; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
-; Block Design Naming                                                        ; Auto               ; Auto               ;
-; SDC constraint protection                                                  ; Off                ; Off                ;
-; Synthesis Effort                                                           ; Auto               ; Auto               ;
-; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
-; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
-; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
-; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
-; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
-+----------------------------------------------------------------------------+--------------------+--------------------+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                            ; part1              ; part1              ;
+; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; DSP Block Balancing                                              ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto ROM Replacement                                             ; On                 ; On                 ;
+; Auto RAM Replacement                                             ; On                 ; On                 ;
+; Auto DSP Block Replacement                                       ; On                 ; On                 ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Strict RAM Replacement                                           ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto RAM Block Balancing                                         ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                               ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                    ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Timing-Driven Synthesis                                          ; On                 ; On                 ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                      ; Off                ; Off                ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; SDC constraint protection                                        ; Off                ; Off                ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                             ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                           ; On                 ; On                 ;
++------------------------------------------------------------------+--------------------+--------------------+
 
 
 +------------------------------------------+
@@ -203,11 +202,11 @@ agreement for further details.
 +------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 ; part1.v                            ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v                            ;         ;
 ; clock_generator.v                  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v                  ;         ;
-; altpll.tdf                         ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/altpll.tdf                              ;         ;
-; aglobal161.inc                     ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/aglobal161.inc                          ;         ;
-; stratix_pll.inc                    ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratix_pll.inc                         ;         ;
-; stratixii_pll.inc                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/stratixii_pll.inc                       ;         ;
-; cycloneii_pll.inc                  ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/cycloneii_pll.inc                       ;         ;
+; altpll.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altpll.tdf                              ;         ;
+; aglobal191.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc                          ;         ;
+; stratix_pll.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratix_pll.inc                         ;         ;
+; stratixii_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratixii_pll.inc                       ;         ;
+; cycloneii_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/cycloneii_pll.inc                       ;         ;
 ; audio_and_video_config.v           ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v           ;         ;
 ; altera_up_slow_clock_generator.v   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_slow_clock_generator.v   ;         ;
 ; altera_up_i2c_av_auto_initialize.v ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_i2c_av_auto_initialize.v ;         ;
@@ -217,12 +216,12 @@ agreement for further details.
 ; altera_up_audio_in_deserializer.v  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_in_deserializer.v  ;         ;
 ; altera_up_audio_bit_counter.v      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_bit_counter.v      ;         ;
 ; altera_up_sync_fifo.v              ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_sync_fifo.v              ;         ;
-; scfifo.tdf                         ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/scfifo.tdf                              ;         ;
-; a_regfifo.inc                      ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_regfifo.inc                           ;         ;
-; a_dpfifo.inc                       ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_dpfifo.inc                            ;         ;
-; a_i2fifo.inc                       ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_i2fifo.inc                            ;         ;
-; a_fffifo.inc                       ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_fffifo.inc                            ;         ;
-; a_f2fifo.inc                       ; yes             ; Megafunction                 ; d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/a_f2fifo.inc                            ;         ;
+; scfifo.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/scfifo.tdf                              ;         ;
+; a_regfifo.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_regfifo.inc                           ;         ;
+; a_dpfifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_dpfifo.inc                            ;         ;
+; a_i2fifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_i2fifo.inc                            ;         ;
+; a_fffifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_fffifo.inc                            ;         ;
+; a_f2fifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_f2fifo.inc                            ;         ;
 ; db/scfifo_o441.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/scfifo_o441.tdf                 ;         ;
 ; db/a_dpfifo_bs31.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf               ;         ;
 ; db/altsyncram_9tb1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf             ;         ;
@@ -239,24 +238,24 @@ agreement for further details.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 516            ;
+; Estimated Total logic elements              ; 528            ;
 ;                                             ;                ;
-; Total combinational functions               ; 510            ;
+; Total combinational functions               ; 522            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 226            ;
-;     -- 3 input functions                    ; 106            ;
-;     -- <=2 input functions                  ; 178            ;
+;     -- 4 input functions                    ; 227            ;
+;     -- 3 input functions                    ; 112            ;
+;     -- <=2 input functions                  ; 183            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 410            ;
+;     -- normal mode                          ; 422            ;
 ;     -- arithmetic mode                      ; 100            ;
 ;                                             ;                ;
-; Total registers                             ; 290            ;
-;     -- Dedicated logic registers            ; 290            ;
+; Total registers                             ; 293            ;
+;     -- Dedicated logic registers            ; 293            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 11             ;
-; Total memory bits                           ; 11264          ;
+; I/O pins                                    ; 13             ;
+; Total memory bits                           ; 12288          ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
 ;                                             ;                ;
@@ -264,9 +263,9 @@ agreement for further details.
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 378            ;
-; Total fan-out                               ; 4136           ;
-; Average fan-out                             ; 4.54           ;
+; Maximum fan-out                             ; 389            ;
+; Total fan-out                               ; 4315           ;
+; Average fan-out                             ; 4.60           ;
 +---------------------------------------------+----------------+
 
 
@@ -275,27 +274,27 @@ agreement for further details.
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                      ; Entity Name                      ; Library Name ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |part1                                                        ; 510 (1)             ; 290 (0)                   ; 11264       ; 0            ; 0       ; 0         ; 11   ; 0            ; |part1                                                                                                                                                                                                                   ; part1                            ; work         ;
+; |part1                                                        ; 522 (9)             ; 293 (0)                   ; 12288       ; 0            ; 0       ; 0         ; 13   ; 0            ; |part1                                                                                                                                                                                                                   ; part1                            ; work         ;
 ;    |audio_and_video_config:cfg|                               ; 186 (10)            ; 65 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg                                                                                                                                                                                        ; audio_and_video_config           ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                          ; 38 (38)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller                                                                                                                                                           ; Altera_UP_I2C                    ; work         ;
 ;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 122 (122)           ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                       ; Altera_UP_I2C_AV_Auto_Initialize ; work         ;
 ;       |Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz| ; 16 (16)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz                                                                                                                                  ; Altera_UP_Slow_Clock_Generator   ; work         ;
-;    |audio_codec:codec|                                        ; 323 (10)            ; 225 (2)                   ; 11264       ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                 ; audio_codec                      ; work         ;
-;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 159 (44)            ; 109 (37)                  ; 5120        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                           ; Altera_UP_Audio_In_Deserializer  ; work         ;
+;    |audio_codec:codec|                                        ; 327 (10)            ; 228 (2)                   ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                 ; audio_codec                      ; work         ;
+;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 163 (47)            ; 112 (40)                  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                           ; Altera_UP_Audio_In_Deserializer  ; work         ;
 ;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                         ; Altera_UP_Audio_Bit_Counter      ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 52 (0)              ; 33 (0)                    ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO              ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                           ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 52 (0)              ; 33 (0)                    ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                ; scfifo_o441                      ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 52 (29)             ; 33 (13)                   ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                           ; a_dpfifo_bs31                    ; work         ;
-;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram   ; altsyncram_9tb1                  ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO              ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                           ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                ; scfifo_o441                      ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 52 (29)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                           ; a_dpfifo_bs31                    ; work         ;
+;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram   ; altsyncram_9tb1                  ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr           ; cntr_0ab                         ; work         ;
 ;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                         ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb       ; cntr_v9b                         ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 53 (0)              ; 33 (0)                    ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO              ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 53 (0)              ; 33 (0)                    ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                           ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 53 (0)              ; 33 (0)                    ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; scfifo_o441                      ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 53 (30)             ; 33 (13)                   ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; a_dpfifo_bs31                    ; work         ;
-;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 2560        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram  ; altsyncram_9tb1                  ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 54 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO              ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 54 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                           ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 54 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; scfifo_o441                      ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 54 (31)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; a_dpfifo_bs31                    ; work         ;
+;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram  ; altsyncram_9tb1                  ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr          ; cntr_0ab                         ; work         ;
 ;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                         ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb      ; cntr_v9b                         ; work         ;
@@ -371,21 +370,20 @@ Encoding Type:  One-Hot
 +-----------------------------------------------+-----------------------------------+-----------------------------------------------+--------------------------------------------+-----------------------------------+----------------------------------------------+----------------------------------------------+---------------------------------------------+-------------------------------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                 ;
-+---------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
-; Register name                                                                                     ; Reason for Removal                                             ;
-+---------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
-; audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[22..24] ; Lost fanout                                                    ;
-; audio_and_video_config:cfg|num_bits_to_transfer[1,2]                                              ; Merged with audio_and_video_config:cfg|num_bits_to_transfer[0] ;
-; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~2                       ; Lost fanout                                                    ;
-; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~3                       ; Lost fanout                                                    ;
-; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~4                       ; Lost fanout                                                    ;
-; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~2     ; Lost fanout                                                    ;
-; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~3     ; Lost fanout                                                    ;
-; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~4     ; Lost fanout                                                    ;
-; Total Number of Removed Registers = 11                                                            ;                                                                ;
-+---------------------------------------------------------------------------------------------------+----------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                             ;
++-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+; Register name                                                                                 ; Reason for Removal                                             ;
++-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
+; audio_and_video_config:cfg|num_bits_to_transfer[1,2]                                          ; Merged with audio_and_video_config:cfg|num_bits_to_transfer[0] ;
+; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~2                   ; Lost fanout                                                    ;
+; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~3                   ; Lost fanout                                                    ;
+; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~4                   ; Lost fanout                                                    ;
+; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~2 ; Lost fanout                                                    ;
+; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~3 ; Lost fanout                                                    ;
+; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~4 ; Lost fanout                                                    ;
+; Total Number of Removed Registers = 8                                                         ;                                                                ;
++-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -393,12 +391,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 290   ;
+; Total registers                              ; 293   ;
 ; Number of registers using Synchronous Clear  ; 91    ;
 ; Number of registers using Synchronous Load   ; 108   ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 176   ;
+; Number of registers using Clock Enable       ; 179   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -408,16 +406,16 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[4]                                       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[2]                                                                  ;
-; 3:1                ; 21 bits   ; 42 LEs        ; 21 LEs               ; 21 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[1]                                             ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[1]                                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[6]                                                                  ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[12]                                            ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|data_to_transfer[1]                                                                                           ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[1]                                          ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[2] ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[6]                                          ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4] ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[0]                                                  ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[2]                                                  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[4]                                                  ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_bit[2]                                                                   ;
-; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[10]                                             ;
+; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[5]                                              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1163,20 +1161,6 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "audio_codec:codec"                                                                                     ;
-+-------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port                    ; Type   ; Severity ; Details                                                                             ;
-+-------------------------+--------+----------+-------------------------------------------------------------------------------------+
-; writedata_left[23..20]  ; Input  ; Info     ; Stuck at GND                                                                        ;
-; writedata_right[23..20] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; readdata_left[23..21]   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; readdata_left[0]        ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; readdata_right[23..21]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; readdata_right[0]       ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+-------------------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller"                                     ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1214,30 +1198,30 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 11                          ;
-; cycloneiii_ff         ; 290                         ;
-;     ENA               ; 45                          ;
+; boundary_port         ; 13                          ;
+; cycloneiii_ff         ; 293                         ;
+;     ENA               ; 48                          ;
 ;     ENA SCLR          ; 23                          ;
 ;     ENA SCLR SLD      ; 23                          ;
 ;     ENA SLD           ; 85                          ;
 ;     SCLR              ; 45                          ;
 ;     plain             ; 69                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 510                         ;
+; cycloneiii_lcell_comb ; 522                         ;
 ;     arith             ; 100                         ;
 ;         2 data inputs ; 76                          ;
 ;         3 data inputs ; 24                          ;
-;     normal            ; 410                         ;
+;     normal            ; 422                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 18                          ;
-;         2 data inputs ; 83                          ;
-;         3 data inputs ; 82                          ;
-;         4 data inputs ; 226                         ;
+;         2 data inputs ; 88                          ;
+;         3 data inputs ; 88                          ;
+;         4 data inputs ; 227                         ;
 ; cycloneiii_pll        ; 1                           ;
-; cycloneiii_ram_block  ; 88                          ;
+; cycloneiii_ram_block  ; 96                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.39                        ;
+; Average LUT depth     ; 2.36                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1246,7 +1230,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -1255,19 +1239,23 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 16.1.2 Build 203 01/18/2017 SJ Lite Edition
-    Info: Processing started: Sun Feb 16 18:48:51 2020
+    Info: Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
+    Info: Processing started: Sun Feb 23 19:14:40 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part1 -c part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
 Warning (12125): Using design file part1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: part1 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 1
 Info (12127): Elaborating entity "part1" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at part1.v(25): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 25
-Warning (10230): Verilog HDL assignment warning at part1.v(26): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 26
+Warning (10230): Verilog HDL assignment warning at part1.v(36): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 36
+Warning (10230): Verilog HDL assignment warning at part1.v(37): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 37
+Warning (10230): Verilog HDL assignment warning at part1.v(41): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 41
+Warning (10230): Verilog HDL assignment warning at part1.v(42): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 42
+Warning (10230): Verilog HDL assignment warning at part1.v(46): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 46
+Warning (10230): Verilog HDL assignment warning at part1.v(47): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 47
 Warning (12125): Using design file clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: clock_generator File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 48
-Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 51
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 81
 Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
 Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
 Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
@@ -1329,7 +1317,7 @@ Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_
     Info (12134): Parameter "valid_lock_multiplier" = "1"
 Warning (12125): Using design file audio_and_video_config.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: audio_and_video_config File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v Line: 49
-Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 61
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 91
 Warning (12125): Using design file altera_up_slow_clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_slow_clock_generator.v Line: 53
 Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v Line: 180
@@ -1341,7 +1329,7 @@ Warning (12125): Using design file altera_up_i2c.v, which is not specified as a 
 Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v Line: 252
 Warning (12125): Using design file audio_codec.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: audio_codec File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v Line: 49
-Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 82
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 112
 Warning (12125): Using design file altera_up_clock_edge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
     Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_clock_edge.v Line: 48
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v Line: 181
@@ -1369,7 +1357,7 @@ Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_De
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_o441.tdf
     Info (12023): Found entity 1: scfifo_o441 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/scfifo_o441.tdf Line: 25
-Info (12128): Elaborating entity "scfifo_o441" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated" File: d:/intelfpga_lite/16.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
+Info (12128): Elaborating entity "scfifo_o441" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_bs31.tdf
     Info (12023): Found entity 1: a_dpfifo_bs31 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 33
 Info (12128): Elaborating entity "a_dpfifo_bs31" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/scfifo_o441.tdf Line: 38
@@ -1393,31 +1381,21 @@ Warning (12125): Using design file altera_up_audio_out_serializer.v, which is no
     Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_out_serializer.v Line: 47
 Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v Line: 267
 Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
-Warning (14284): Synthesized away the following node(s):
-    Warning (14285): Synthesized away the following RAM node(s):
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[0]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 38
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[21]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 668
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[22]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 698
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[23]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 728
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[0]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 38
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[21]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 668
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[22]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 698
-        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[23]" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 728
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 9 registers lost all their fanouts during netlist optimizations.
+Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 620 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 7 input pins
+Info (21057): Implemented 642 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 3 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 520 logic cells
-    Info (21064): Implemented 88 RAM segments
+    Info (21061): Implemented 532 logic cells
+    Info (21064): Implemented 96 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 4868 megabytes
-    Info: Processing ended: Sun Feb 16 18:49:03 2020
-    Info: Elapsed time: 00:00:12
-    Info: Total CPU time (on all processors): 00:00:24
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
+    Info: Peak virtual memory: 4865 megabytes
+    Info: Processing ended: Sun Feb 23 19:14:50 2020
+    Info: Elapsed time: 00:00:10
+    Info: Total CPU time (on all processors): 00:00:22
 
 
