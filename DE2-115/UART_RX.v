@@ -1,23 +1,20 @@
 module UART_RX(CLK50MHz, RX, DATA);
 	input CLK50MHz, RX;
-	output [7:0] DATA;
+	output reg [7:0] DATA;
 
 
 	// Internal Circuitry
 	reg [17:0] counter;
 	reg tick;
 	reg [1:0] statemachine;
+	reg [7:0] cache;
+	reg [3:0] pointer;
 
 
 	// RX reader
 	always @(posedge tick) begin
-		case (statemachine)
-			//2'b00 : 
-			//2'b01 :
-			//2'b10 :
-			//2'b11 :
-			default : ;
-		endcase
+		cache[pointer] <= RX;
+		if (cache[pointer - 1] == 1 && RX == 0)
 	end
 
 
