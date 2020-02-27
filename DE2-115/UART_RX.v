@@ -15,6 +15,7 @@ module UART_RX(CLK50MHz, RX, DATA);
 	always @(posedge tick) begin
 		cache[pointer] <= RX;
 		if (cache[pointer - 1] == 1 && RX == 0)
+			;
 	end
 
 
