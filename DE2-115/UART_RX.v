@@ -13,7 +13,7 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 	reg [2:0] cacheIndex; // Track which bit we are sampling into cache	
 
 	reg [4:0] pointer; // used to count tick before resampling
-	//	reg isIdle;				// Store the previous sample when idling
+	reg parityBit;
 
 
 	// RX reader - Samples bitstream
@@ -46,22 +46,23 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 					// Collect word data
 					4'd1	:
 					begin
-						if (pointer == 0)	// If we haven't sampled this bit yet
+						if (pointer == 0) // If we haven't sampled this bit yet
 							begin
-								cache[cacheIndex] <= RX;	// Then sample it
-								pointer <= pointer + 1; 	// and mark it as such
+								cache[cacheIndex] <= RX; // Then sample it
+								pointer <= pointer + 1; // and mark it as such
 							end
-						else	// otherwise we have sampled it already
+						else // otherwise we have sampled it already
 							begin
 								pointer <= pointer + 1;
+
 								if (pointer == 5'd16) // Wait for 1 sample period
 								begin
 									if (cacheIndex == 3'd7) // If we have sampled all bits
 										begin
-											cacheIndex <= 0;		// Reset for next loop and
-											statemachine <= 4'd2;	// then go to the next state
+											cacheIndex <= 0; // Reset for next loop and
+											statemachine <= 4'd2; // then go to the next state
 										end
-									else	// Then move to the next bit
+									else // Then move to the next bit
 										begin
 											cacheIndex <= cacheIndex + 1;
 											pointer <= 0;
@@ -70,8 +71,33 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 							end
 					end
 
-					// Find Parity
-					4'd2:;
+					// Check the Parity bit
+					4'd2	:
+					begin
+						if (pointer == 0) // If we haven't sampled this bit yet, sample it
+							begin
+
+								// TODO fix this trash vvv
+								parityBit <= cache[0]^cache[1]^cache[2]^cache[3]^cache[4]^cache[5]^cache[6]^cache[7];
+								pointer <= pointer + 1; // and mark it as such
+
+								if (parityBit == RX)
+								begin
+									DATA <= cache;
+								end
+							end
+						else // otherwise we have sampled it already
+							begin
+								pointer <= pointer + 1;
+
+								if (pointer == 5'd16) // Wait for 1 sample period
+								begin
+									pointer <= 0; // reset to zero for next state
+									statemachine <= 4'd3; // go to the next state
+								end
+							end
+					end
+
 
 					// Stop bit
 					default	:
