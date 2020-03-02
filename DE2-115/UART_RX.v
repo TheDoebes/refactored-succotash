@@ -1,38 +1,109 @@
-module UART_RX(CLK50MHz, RX, DATA);
+module UART_RX(CLK50MHz, RESET, RX, DATA);
 	input CLK50MHz, RX;
+	input RESET; // Active low reset signal
 	output reg [7:0] DATA;
 
 
 	// Internal Circuitry
-	reg [17:0] counter;
-	reg tick;
-	reg [1:0] statemachine;
-	reg [7:0] cache;
-	reg [3:0] pointer;
+	reg [17:0] counter; // Used to generate tick from 50MHz clock
+	reg tick; // 153KHz Sampling Clock signal
+	reg [3:0] statemachine; // StateMachine state counter
+
+	reg [7:0] cache; // Caching samples before sending full words to DATA
+	reg [2:0] cacheIndex; // Track which bit we are sampling into cache	
+
+	reg [4:0] pointer; // used to count tick before resampling
+	//	reg isIdle;				// Store the previous sample when idling
 
 
-	// RX reader
-	always @(posedge tick) begin
-		cache[pointer] <= RX;
-		if (cache[pointer - 1] == 1 && RX == 0)
-			;
+	// RX reader - Samples bitstream
+	always @(posedge tick or negedge RESET)
+	begin
+		if (RESET == 0)
+			begin
+				;
+			end
+		else
+			begin
+				case (statemachine) // Interpret the RX line
+
+					// Idle state
+					4'd0	: // Detect start bit
+					begin
+						if (RX == 0)
+							begin
+								pointer <= pointer + 1;
+								if (pointer == 5'd24)
+								begin
+									statemachine <= statemachine + 1;
+									pointer <= 0;
+								end
+							end
+						else
+							pointer <= 0;
+					end
+
+					// Collect word data
+					4'd1	:
+					begin
+						if (pointer == 0)	// If we haven't sampled this bit yet
+							begin
+								cache[cacheIndex] <= RX;	// Then sample it
+								pointer <= pointer + 1; 	// and mark it as such
+							end
+						else	// otherwise we have sampled it already
+							begin
+								pointer <= pointer + 1;
+								if (pointer == 5'd16) // Wait for 1 sample period
+								begin
+									if (cacheIndex == 3'd7) // If we have sampled all bits
+										begin
+											cacheIndex <= 0;		// Reset for next loop and
+											statemachine <= 4'd2;	// then go to the next state
+										end
+									else	// Then move to the next bit
+										begin
+											cacheIndex <= cacheIndex + 1;
+											pointer <= 0;
+										end
+								end
+							end
+					end
+
+					// Find Parity
+					4'd2:;
+
+					// Stop bit
+					default	:
+					begin
+						if (RX == 1)
+						begin
+							pointer <= 0;
+							statemachine <= 4'd0;
+						end
+					end
+				endcase
+			end
 	end
 
 
-	// Tick generator
-	always @(posedge CLK50MHz) begin
-		if (counter == 18'b0)
-		begin
-			tick <= 0;
-		end
-
-
-		counter <= counter + 1;
-		if (counter == 18'd153000)
-		begin
-			counter <= 0;
-			tick <= 1;
-		end
+	// Tick generator - Creates 153KHz Sampling Clock signal
+	always @(posedge CLK50MHz or negedge RESET)
+	begin
+		if (RESET == 0)
+			begin
+				tick <= 0;
+				counter <= 18'd0;
+			end
+		else
+			begin
+				counter <= counter + 1;
+				if (counter == 18'd153000)
+				begin
+					tick <= !tick;
+					counter <= 18'd0;
+				end
+			end
 
 	end
 
