@@ -36,7 +36,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 
 	always @(*)
 	begin
-		case (SW)
+		case (SW) // TODO change to a mapping variable, then map dial to that var
 			2'b01 :
 			begin
 				writedata_left <= (readdata_left * 24'd1024)/24'd1024;

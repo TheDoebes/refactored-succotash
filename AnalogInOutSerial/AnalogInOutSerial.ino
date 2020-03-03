@@ -22,6 +22,7 @@
 
   http://www.arduino.cc/en/Tutorial/AnalogInOutSerial
 */
+#include <SoftwareSerial.h>
 
 // These constants won't change. They're used to give names to the pins used:
 const int analogInPin = A5;  // Analog input pin that the potentiometer is attached to
@@ -30,9 +31,12 @@ const int analogOutPin = 9; // Analog output pin that the LED is attached to
 int sensorValue = 0;        // value read from the pot
 int outputValue = 0;        // value output to the PWM (analog out)
 
+SoftwareSerial comms (4,3);
+
 void setup() {
   // initialize serial communications at 9600 bps:
   Serial.begin(9600);
+  comms.begin(9600);
 }
 
 void loop() {
@@ -48,6 +52,8 @@ void loop() {
   Serial.print(sensorValue);
   Serial.print("\t output = ");
   Serial.println(outputValue);
+
+  comms.write(outputValue);
 
   // wait 2 milliseconds before the next loop for the analog-to-digital
   // converter to settle after the last reading:
