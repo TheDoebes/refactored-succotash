@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part1
-Sun Feb 23 19:14:50 2020
+Tue Mar 03 17:37:01 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
 
 
@@ -46,9 +46,10 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Editio
  38. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller"
  39. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
  40. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
- 41. Post-Synthesis Netlist Statistics for Top Partition
- 42. Elapsed Time Per Partition
- 43. Analysis & Synthesis Messages
+ 41. Port Connectivity Checks: "UART_RX:uart_1"
+ 42. Post-Synthesis Netlist Statistics for Top Partition
+ 43. Elapsed Time Per Partition
+ 44. Analysis & Synthesis Messages
 
 
 
@@ -75,16 +76,16 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                     ;
 +------------------------------------+-------------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Feb 23 19:14:50 2020                       ;
+; Analysis & Synthesis Status        ; Successful - Tue Mar 03 17:37:01 2020                       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition ;
 ; Revision Name                      ; part1                                                       ;
 ; Top-level Entity Name              ; part1                                                       ;
 ; Family                             ; Cyclone IV E                                                ;
-; Total logic elements               ; 528                                                         ;
-;     Total combinational functions  ; 522                                                         ;
+; Total logic elements               ; 542                                                         ;
+;     Total combinational functions  ; 536                                                         ;
 ;     Dedicated logic registers      ; 293                                                         ;
 ; Total registers                    ; 293                                                         ;
-; Total pins                         ; 13                                                          ;
+; Total pins                         ; 49                                                          ;
 ; Total virtual pins                 ; 0                                                           ;
 ; Total memory bits                  ; 12,288                                                      ;
 ; Embedded Multiplier 9-bit elements ; 0                                                           ;
@@ -200,36 +201,37 @@ https://fpgasoftware.intel.com/eula.
 +------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path   ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                   ; Library ;
 +------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
-; part1.v                            ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v                            ;         ;
-; clock_generator.v                  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v                  ;         ;
+; part1.v                            ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v                            ;         ;
+; clock_generator.v                  ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v                  ;         ;
+; audio_codec.v                      ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v                      ;         ;
+; audio_and_video_config.v           ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v           ;         ;
+; Altera_UP_SYNC_FIFO.v              ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_SYNC_FIFO.v              ;         ;
+; Altera_UP_Slow_Clock_Generator.v   ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Slow_Clock_Generator.v   ;         ;
+; Altera_UP_I2C_AV_Auto_Initialize.v ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_I2C_AV_Auto_Initialize.v ;         ;
+; Altera_UP_I2C.v                    ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_I2C.v                    ;         ;
+; Altera_UP_Clock_Edge.v             ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Clock_Edge.v             ;         ;
+; Altera_UP_Audio_Out_Serializer.v   ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Audio_Out_Serializer.v   ;         ;
+; Altera_UP_Audio_In_Deserializer.v  ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Audio_In_Deserializer.v  ;         ;
+; Altera_UP_Audio_Bit_Counter.v      ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Audio_Bit_Counter.v      ;         ;
+; UART_RX.v                          ; yes             ; User Verilog HDL File        ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v                          ;         ;
 ; altpll.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altpll.tdf                              ;         ;
 ; aglobal191.inc                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/aglobal191.inc                          ;         ;
 ; stratix_pll.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratix_pll.inc                         ;         ;
 ; stratixii_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/stratixii_pll.inc                       ;         ;
 ; cycloneii_pll.inc                  ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/cycloneii_pll.inc                       ;         ;
-; audio_and_video_config.v           ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v           ;         ;
-; altera_up_slow_clock_generator.v   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_slow_clock_generator.v   ;         ;
-; altera_up_i2c_av_auto_initialize.v ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_i2c_av_auto_initialize.v ;         ;
-; altera_up_i2c.v                    ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_i2c.v                    ;         ;
-; audio_codec.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v                      ;         ;
-; altera_up_clock_edge.v             ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_clock_edge.v             ;         ;
-; altera_up_audio_in_deserializer.v  ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_in_deserializer.v  ;         ;
-; altera_up_audio_bit_counter.v      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_bit_counter.v      ;         ;
-; altera_up_sync_fifo.v              ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_sync_fifo.v              ;         ;
 ; scfifo.tdf                         ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/scfifo.tdf                              ;         ;
 ; a_regfifo.inc                      ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_regfifo.inc                           ;         ;
 ; a_dpfifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_dpfifo.inc                            ;         ;
 ; a_i2fifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_i2fifo.inc                            ;         ;
 ; a_fffifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_fffifo.inc                            ;         ;
 ; a_f2fifo.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/a_f2fifo.inc                            ;         ;
-; db/scfifo_o441.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/scfifo_o441.tdf                 ;         ;
-; db/a_dpfifo_bs31.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf               ;         ;
-; db/altsyncram_9tb1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf             ;         ;
-; db/cmpr_ks8.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cmpr_ks8.tdf                    ;         ;
-; db/cntr_v9b.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cntr_v9b.tdf                    ;         ;
-; db/cntr_ca7.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cntr_ca7.tdf                    ;         ;
-; db/cntr_0ab.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cntr_0ab.tdf                    ;         ;
-; altera_up_audio_out_serializer.v   ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_out_serializer.v   ;         ;
+; db/scfifo_o441.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/scfifo_o441.tdf                 ;         ;
+; db/a_dpfifo_bs31.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf               ;         ;
+; db/altsyncram_9tb1.tdf             ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf             ;         ;
+; db/cmpr_ks8.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cmpr_ks8.tdf                    ;         ;
+; db/cntr_v9b.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_v9b.tdf                    ;         ;
+; db/cntr_ca7.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_ca7.tdf                    ;         ;
+; db/cntr_0ab.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_0ab.tdf                    ;         ;
 +------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
@@ -238,23 +240,23 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 528            ;
+; Estimated Total logic elements              ; 542            ;
 ;                                             ;                ;
-; Total combinational functions               ; 522            ;
+; Total combinational functions               ; 536            ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 227            ;
-;     -- 3 input functions                    ; 112            ;
+;     -- 4 input functions                    ; 224            ;
+;     -- 3 input functions                    ; 129            ;
 ;     -- <=2 input functions                  ; 183            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 422            ;
+;     -- normal mode                          ; 436            ;
 ;     -- arithmetic mode                      ; 100            ;
 ;                                             ;                ;
 ; Total registers                             ; 293            ;
 ;     -- Dedicated logic registers            ; 293            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
-; I/O pins                                    ; 13             ;
+; I/O pins                                    ; 49             ;
 ; Total memory bits                           ; 12288          ;
 ;                                             ;                ;
 ; Embedded Multiplier 9-bit elements          ; 0              ;
@@ -264,8 +266,8 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
 ; Maximum fan-out                             ; 389            ;
-; Total fan-out                               ; 4315           ;
-; Average fan-out                             ; 4.60           ;
+; Total fan-out                               ; 4390           ;
+; Average fan-out                             ; 4.28           ;
 +---------------------------------------------+----------------+
 
 
@@ -274,13 +276,13 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                      ; Entity Name                      ; Library Name ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |part1                                                        ; 522 (9)             ; 293 (0)                   ; 12288       ; 0            ; 0       ; 0         ; 13   ; 0            ; |part1                                                                                                                                                                                                                   ; part1                            ; work         ;
-;    |audio_and_video_config:cfg|                               ; 186 (10)            ; 65 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg                                                                                                                                                                                        ; audio_and_video_config           ; work         ;
+; |part1                                                        ; 536 (25)            ; 293 (0)                   ; 12288       ; 0            ; 0       ; 0         ; 49   ; 0            ; |part1                                                                                                                                                                                                                   ; part1                            ; work         ;
+;    |audio_and_video_config:cfg|                               ; 185 (10)            ; 65 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg                                                                                                                                                                                        ; audio_and_video_config           ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                          ; 38 (38)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller                                                                                                                                                           ; Altera_UP_I2C                    ; work         ;
-;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 122 (122)           ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                       ; Altera_UP_I2C_AV_Auto_Initialize ; work         ;
+;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 121 (121)           ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                       ; Altera_UP_I2C_AV_Auto_Initialize ; work         ;
 ;       |Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz| ; 16 (16)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz                                                                                                                                  ; Altera_UP_Slow_Clock_Generator   ; work         ;
-;    |audio_codec:codec|                                        ; 327 (10)            ; 228 (2)                   ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                 ; audio_codec                      ; work         ;
-;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 163 (47)            ; 112 (40)                  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                           ; Altera_UP_Audio_In_Deserializer  ; work         ;
+;    |audio_codec:codec|                                        ; 326 (10)            ; 228 (2)                   ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                 ; audio_codec                      ; work         ;
+;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 162 (47)            ; 112 (40)                  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                           ; Altera_UP_Audio_In_Deserializer  ; work         ;
 ;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                         ; Altera_UP_Audio_Bit_Counter      ; work         ;
 ;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO              ; work         ;
 ;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                           ; work         ;
@@ -290,10 +292,10 @@ https://fpgasoftware.intel.com/eula.
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr           ; cntr_0ab                         ; work         ;
 ;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                         ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb       ; cntr_v9b                         ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 54 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO              ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 54 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                           ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 54 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; scfifo_o441                      ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 54 (31)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; a_dpfifo_bs31                    ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO              ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                           ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; scfifo_o441                      ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 53 (30)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; a_dpfifo_bs31                    ; work         ;
 ;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram  ; altsyncram_9tb1                  ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr          ; cntr_0ab                         ; work         ;
 ;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                         ; work         ;
@@ -406,16 +408,16 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[1]                                       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[6]                                                                  ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[12]                                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|data_to_transfer[1]                                                                                           ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[6]                                          ;
-; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[4] ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[0]                                                  ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[4]                                                  ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_bit[2]                                                                   ;
-; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[5]                                              ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[3]                                       ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[0]                                                                  ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[22]                                            ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|data_to_transfer[4]                                                                                           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[9]                                          ;
+; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[0] ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[1]                                                  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[6]                                                  ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_bit[1]                                                                   ;
+; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[23]                                             ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1193,12 +1195,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+---------------------------------------------------------------------------+
 
 
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UART_RX:uart_1"                                                                     ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; DATA ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
+; boundary_port         ; 49                          ;
 ; cycloneiii_ff         ; 293                         ;
 ;     ENA               ; 48                          ;
 ;     ENA SCLR          ; 23                          ;
@@ -1207,21 +1218,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 ;     SCLR              ; 45                          ;
 ;     plain             ; 69                          ;
 ; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 522                         ;
+; cycloneiii_lcell_comb ; 536                         ;
 ;     arith             ; 100                         ;
 ;         2 data inputs ; 76                          ;
 ;         3 data inputs ; 24                          ;
-;     normal            ; 422                         ;
+;     normal            ; 436                         ;
 ;         0 data inputs ; 1                           ;
 ;         1 data inputs ; 18                          ;
 ;         2 data inputs ; 88                          ;
-;         3 data inputs ; 88                          ;
-;         4 data inputs ; 227                         ;
+;         3 data inputs ; 105                         ;
+;         4 data inputs ; 224                         ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 96                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.36                        ;
+; Average LUT depth     ; 2.34                        ;
 +-----------------------+-----------------------------+
 
 
@@ -1240,25 +1251,54 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
-    Info: Processing started: Sun Feb 23 19:14:40 2020
+    Info: Processing started: Tue Mar 03 17:36:51 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part1 -c part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
-Warning (12125): Using design file part1.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: part1 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file part1.v
+    Info (12023): Found entity 1: part1 File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file clock_generator.v
+    Info (12023): Found entity 1: clock_generator File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file audio_codec.v
+    Info (12023): Found entity 1: audio_codec File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v Line: 49
+Info (12021): Found 1 design units, including 1 entities, in source file audio_and_video_config.v
+    Info (12023): Found entity 1: audio_and_video_config File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v Line: 49
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_sync_fifo.v
+    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_SYNC_FIFO.v Line: 47
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_slow_clock_generator.v
+    Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Slow_Clock_Generator.v Line: 53
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c_lcm_auto_initialize.v
+    Info (12023): Found entity 1: Altera_UP_I2C_LCM_Auto_Initialize File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_I2C_LCM_Auto_Initialize.v Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c_dc_auto_initialize.v
+    Info (12023): Found entity 1: Altera_UP_I2C_DC_Auto_Initialize File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_I2C_DC_Auto_Initialize.v Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c_av_auto_initialize.v
+    Info (12023): Found entity 1: Altera_UP_I2C_AV_Auto_Initialize File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_I2C_AV_Auto_Initialize.v Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_i2c.v
+    Info (12023): Found entity 1: Altera_UP_I2C File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_I2C.v Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_clock_edge.v
+    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Clock_Edge.v Line: 48
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_audio_out_serializer.v
+    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Audio_Out_Serializer.v Line: 47
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_audio_in_deserializer.v
+    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Audio_In_Deserializer.v Line: 47
+Info (12021): Found 1 design units, including 1 entities, in source file altera_up_audio_bit_counter.v
+    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/Altera_UP_Audio_Bit_Counter.v Line: 49
+Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.v
+    Info (12023): Found entity 1: UART_RX File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 1
 Info (12127): Elaborating entity "part1" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at part1.v(36): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 36
-Warning (10230): Verilog HDL assignment warning at part1.v(37): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 37
-Warning (10230): Verilog HDL assignment warning at part1.v(41): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 41
-Warning (10230): Verilog HDL assignment warning at part1.v(42): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 42
-Warning (10230): Verilog HDL assignment warning at part1.v(46): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 46
-Warning (10230): Verilog HDL assignment warning at part1.v(47): truncated value with size 32 to match size of target (24) File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 47
-Warning (12125): Using design file clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: clock_generator File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 48
-Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 81
-Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
-Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
-Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
+Info (12128): Elaborating entity "UART_RX" for hierarchy "UART_RX:uart_1" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 73
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(51): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 51
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(54): truncated value with size 32 to match size of target (4) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 54
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(69): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 69
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(73): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 73
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(85): truncated value with size 32 to match size of target (3) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 85
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(99): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 99
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(112): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 112
+Warning (10230): Verilog HDL assignment warning at UART_RX.v(147): truncated value with size 32 to match size of target (18) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 147
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 97
+Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
+Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
+Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
     Info (12134): Parameter "clk0_divide_by" = "31"
     Info (12134): Parameter "clk0_duty_cycle" = "50"
     Info (12134): Parameter "clk0_multiply_by" = "14"
@@ -1315,36 +1355,18 @@ Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_
     Info (12134): Parameter "port_sclkout0" = "PORT_UNUSED"
     Info (12134): Parameter "port_sclkout1" = "PORT_UNUSED"
     Info (12134): Parameter "valid_lock_multiplier" = "1"
-Warning (12125): Using design file audio_and_video_config.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: audio_and_video_config File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v Line: 49
-Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 91
-Warning (12125): Using design file altera_up_slow_clock_generator.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Slow_Clock_Generator File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_slow_clock_generator.v Line: 53
-Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v Line: 180
-Warning (12125): Using design file altera_up_i2c_av_auto_initialize.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_I2C_AV_Auto_Initialize File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_i2c_av_auto_initialize.v Line: 48
-Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v Line: 205
-Warning (12125): Using design file altera_up_i2c.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_I2C File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_i2c.v Line: 48
-Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_and_video_config.v Line: 252
-Warning (12125): Using design file audio_codec.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: audio_codec File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v Line: 49
-Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/part1.v Line: 112
-Warning (12125): Using design file altera_up_clock_edge.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Clock_Edge File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_clock_edge.v Line: 48
-Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v Line: 181
-Warning (12125): Using design file altera_up_audio_in_deserializer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Audio_In_Deserializer File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_in_deserializer.v Line: 47
-Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v Line: 238
-Warning (12125): Using design file altera_up_audio_bit_counter.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Audio_Bit_Counter File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_bit_counter.v Line: 49
-Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_in_deserializer.v Line: 197
-Warning (12125): Using design file altera_up_sync_fifo.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_SYNC_FIFO File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_sync_fifo.v Line: 47
-Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_in_deserializer.v Line: 219
-Info (12128): Elaborating entity "scfifo" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_sync_fifo.v Line: 153
-Info (12130): Elaborated megafunction instantiation "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_sync_fifo.v Line: 153
-Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_sync_fifo.v Line: 153
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 107
+Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v Line: 180
+Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v Line: 205
+Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v Line: 252
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 128
+Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v Line: 181
+Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v Line: 238
+Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/altera_up_audio_in_deserializer.v Line: 197
+Info (12128): Elaborating entity "Altera_UP_SYNC_FIFO" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/altera_up_audio_in_deserializer.v Line: 219
+Info (12128): Elaborating entity "scfifo" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/altera_up_sync_fifo.v Line: 153
+Info (12130): Elaborated megafunction instantiation "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/altera_up_sync_fifo.v Line: 153
+Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO" with the following parameter: File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/altera_up_sync_fifo.v Line: 153
     Info (12134): Parameter "add_ram_output_register" = "OFF"
     Info (12134): Parameter "intended_device_family" = "Cyclone II"
     Info (12134): Parameter "lpm_numwords" = "128"
@@ -1356,46 +1378,81 @@ Info (12133): Instantiated megafunction "audio_codec:codec|Altera_UP_Audio_In_De
     Info (12134): Parameter "underflow_checking" = "OFF"
     Info (12134): Parameter "use_eab" = "ON"
 Info (12021): Found 1 design units, including 1 entities, in source file db/scfifo_o441.tdf
-    Info (12023): Found entity 1: scfifo_o441 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/scfifo_o441.tdf Line: 25
+    Info (12023): Found entity 1: scfifo_o441 File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/scfifo_o441.tdf Line: 25
 Info (12128): Elaborating entity "scfifo_o441" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated" File: c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/scfifo.tdf Line: 300
 Info (12021): Found 1 design units, including 1 entities, in source file db/a_dpfifo_bs31.tdf
-    Info (12023): Found entity 1: a_dpfifo_bs31 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 33
-Info (12128): Elaborating entity "a_dpfifo_bs31" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/scfifo_o441.tdf Line: 38
+    Info (12023): Found entity 1: a_dpfifo_bs31 File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 33
+Info (12128): Elaborating entity "a_dpfifo_bs31" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/scfifo_o441.tdf Line: 38
 Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_9tb1.tdf
-    Info (12023): Found entity 1: altsyncram_9tb1 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/altsyncram_9tb1.tdf Line: 28
-Info (12128): Elaborating entity "altsyncram_9tb1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 46
+    Info (12023): Found entity 1: altsyncram_9tb1 File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_9tb1" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 46
 Info (12021): Found 1 design units, including 1 entities, in source file db/cmpr_ks8.tdf
-    Info (12023): Found entity 1: cmpr_ks8 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cmpr_ks8.tdf Line: 23
-Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cmpr_ks8:almost_full_comparer" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 55
-Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cmpr_ks8:three_comparison" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 56
+    Info (12023): Found entity 1: cmpr_ks8 File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cmpr_ks8.tdf Line: 23
+Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cmpr_ks8:almost_full_comparer" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 55
+Info (12128): Elaborating entity "cmpr_ks8" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cmpr_ks8:three_comparison" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 56
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_v9b.tdf
-    Info (12023): Found entity 1: cntr_v9b File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cntr_v9b.tdf Line: 26
-Info (12128): Elaborating entity "cntr_v9b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 57
+    Info (12023): Found entity 1: cntr_v9b File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_v9b.tdf Line: 26
+Info (12128): Elaborating entity "cntr_v9b" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 57
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_ca7.tdf
-    Info (12023): Found entity 1: cntr_ca7 File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cntr_ca7.tdf Line: 26
-Info (12128): Elaborating entity "cntr_ca7" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 58
+    Info (12023): Found entity 1: cntr_ca7 File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_ca7.tdf Line: 26
+Info (12128): Elaborating entity "cntr_ca7" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 58
 Info (12021): Found 1 design units, including 1 entities, in source file db/cntr_0ab.tdf
-    Info (12023): Found entity 1: cntr_0ab File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/cntr_0ab.tdf Line: 26
-Info (12128): Elaborating entity "cntr_0ab" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/db/a_dpfifo_bs31.tdf Line: 59
-Warning (12125): Using design file altera_up_audio_out_serializer.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: Altera_UP_Audio_Out_Serializer File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/altera_up_audio_out_serializer.v Line: 47
-Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/audio_codec.v Line: 267
-Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Cade/Documents/Quartus Projects/starterkit/DE2-115/clock_generator.v Line: 134
+    Info (12023): Found entity 1: cntr_0ab File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_0ab.tdf Line: 26
+Info (12128): Elaborating entity "cntr_0ab" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 59
+Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v Line: 267
+Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 642 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
+Warning (21074): Design contains 36 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "GPIO[0]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[1]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[2]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[3]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[4]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[5]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[6]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[7]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[8]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[9]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[10]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[11]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[12]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[13]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[14]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[15]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[16]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[17]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[18]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[19]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[20]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[21]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[22]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[23]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[24]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[25]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[26]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[27]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[28]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[29]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[30]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[31]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[32]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[33]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[34]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (15610): No output dependent on input pin "GPIO[35]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+Info (21057): Implemented 692 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 45 input pins
     Info (21059): Implemented 3 output pins
     Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 532 logic cells
+    Info (21061): Implemented 546 logic cells
     Info (21064): Implemented 96 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 20 warnings
-    Info: Peak virtual memory: 4865 megabytes
-    Info: Processing ended: Sun Feb 23 19:14:50 2020
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
+    Info: Peak virtual memory: 4866 megabytes
+    Info: Processing ended: Tue Mar 03 17:37:01 2020
     Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:22
+    Info: Total CPU time (on all processors): 00:00:21
 
 

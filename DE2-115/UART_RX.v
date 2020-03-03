@@ -34,7 +34,7 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 				pointer <= 0; // Set the number of ticks counted to zero
 				cache <= 0; // Empty the cache so old samples are not sent
 				cacheIndex <= 0; // Make sure we start refilling the cache from zero
-				partiyBit <= 0; // Set correct parity for empty cache
+				parityBit <= 0; // Set correct parity for empty cache
 				
 				DATA <= 8'd0; // Empty the output register
 				

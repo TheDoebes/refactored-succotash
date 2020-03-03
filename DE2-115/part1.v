@@ -1,6 +1,8 @@
 module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
-	AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT);
-
+	AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT, GPIO);
+	
+	// I/O
+	// DE2-115 Signals
 	input CLOCK_50, CLOCK2_50;
 	input [0:0] KEY;
 	input [1:0] SW;
@@ -12,15 +14,19 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 	input AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK;
 	input AUD_ADCDAT;
 	output AUD_DACDAT;
+	// Arduino Serial, UART
+	input [35:0] GPIO;
 
 	// Local wires.
 	wire read_ready, write_ready, read, write;
 	wire [23:0] readdata_left, readdata_right;
 	reg [23:0] writedata_left, writedata_right;
 	wire reset = ~KEY[0];
+	// Arduino serial local wires
+	wire [7:0] dial;
 
 	/////////////////////////////////
-	// Your code goes here 
+	// Logic
 	/////////////////////////////////
 
 	//	assign writedata_left = readdata_left;//(readdata_left * 2048) /4096;
@@ -33,18 +39,18 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 		case (SW)
 			2'b01 :
 			begin
-				writedata_left <= (readdata_left * 1024)/1024;
-				writedata_right <= (readdata_right * 1024)/1024; 
+				writedata_left <= (readdata_left * 24'd1024)/24'd1024;
+				writedata_right <= (readdata_right * 24'd1024)/24'd1024; 
 			end
 			2'b10 :
 			begin
-				writedata_left <= (readdata_left * 2048)/2048;
-				writedata_right <= (readdata_right * 2048)/2048; 
+				writedata_left <= (readdata_left * 24'd2048)/24'd2048;
+				writedata_right <= (readdata_right * 24'd2048)/24'd2048; 
 			end
-			2'b11:
+			2'b11 :
 			begin
-				writedata_left <= (readdata_left * 4096)/4096;
-				writedata_right <= (readdata_right * 4096)/4096; 
+				writedata_left <= (readdata_left * 24'd4096)/24'd4096;
+				writedata_right <= (readdata_right * 24'd4096)/24'd4096; 
 			end
 			default :
 			begin
@@ -56,7 +62,15 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 	
 	
 	// Instantiate the module for UART recieving from the ardunio
-
+	 UART_RX uart_1(
+	 	// inputs
+	 	CLOCK_50, 
+	 	reset, 
+	 	GPIO[0], 
+	 	
+	 	// outputs
+	 	dial
+	 );
 
 
 	/////////////////////////////////////////////////////////////////////////////////
