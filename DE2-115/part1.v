@@ -24,18 +24,25 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 	wire reset = ~KEY[0];
 	// Arduino serial local wires
 	wire [7:0] dial;
+	wire [23:0] scaleFactor;
 
 	/////////////////////////////////
 	// Logic
 	/////////////////////////////////
 
-	//	assign writedata_left = readdata_left;//(readdata_left * 2048) /4096;
-	//assign writedata_right = readdata_right;//(readdata_right * 2048) /4096 ; 
 	assign read = read_ready && write_ready;
 	assign write = read_ready && write_ready;
+	
+	// Extend dial over the appropriate range to scale audio data
+	scaleFactor = {8'd0, dial, 8'd0};
 
 	always @(*)
 	begin
+		
+		writedata_left <= (readdata_left * scaleFactor) / scaleFactor;
+		writedata_right <= (readdata_right * scaleFactor) / scaleFactor;
+		
+		/* 
 		case (SW) // TODO change to a mapping variable, then map dial to that var
 			2'b01 :
 			begin
@@ -57,7 +64,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 				writedata_left <= readdata_left;
 				writedata_right <= readdata_right;
 			end
-		endcase
+		endcase */
 	end
 	
 	
