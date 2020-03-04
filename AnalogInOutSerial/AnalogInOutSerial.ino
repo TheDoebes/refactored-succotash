@@ -31,7 +31,7 @@ const int analogOutPin = 9; // Analog output pin that the LED is attached to
 int sensorValue = 0;        // value read from the pot
 int outputValue = 0;        // value output to the PWM (analog out)
 
-SoftwareSerial comms(4,3); //TX on 4, RX on 3
+SoftwareSerial comms(3, 4); //RX, TX
 
 void setup() {
   // initialize serial communications at 9600 bps:

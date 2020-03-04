@@ -1,5 +1,5 @@
 Analysis & Synthesis report for part1
-Tue Mar 03 17:37:01 2020
+Wed Mar 04 17:18:34 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
 
 
@@ -14,42 +14,48 @@ Quartus Prime Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Editio
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. Analysis & Synthesis RAM Summary
-  9. State Machine - |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver
- 10. State Machine - |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init
- 11. Registers Removed During Synthesis
- 12. General Register Statistics
- 13. Multiplexer Restructuring Statistics (Restructuring Performed)
- 14. Source assignments for audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
- 15. Source assignments for audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
- 16. Source assignments for audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
- 17. Source assignments for audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
- 18. Parameter Settings for User Entity Instance: clock_generator:my_clock_gen
- 19. Parameter Settings for User Entity Instance: clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio
- 20. Parameter Settings for User Entity Instance: audio_and_video_config:cfg
- 21. Parameter Settings for User Entity Instance: audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz
- 22. Parameter Settings for User Entity Instance: audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize
- 23. Parameter Settings for User Entity Instance: audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller
- 24. Parameter Settings for User Entity Instance: audio_codec:codec
- 25. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
- 26. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
- 27. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
- 28. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
- 29. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
- 30. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
- 31. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
- 32. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
- 33. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
- 34. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
- 35. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
- 36. altpll Parameter Settings by Entity Instance
- 37. scfifo Parameter Settings by Entity Instance
- 38. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller"
- 39. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
- 40. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
- 41. Port Connectivity Checks: "UART_RX:uart_1"
- 42. Post-Synthesis Netlist Statistics for Top Partition
- 43. Elapsed Time Per Partition
- 44. Analysis & Synthesis Messages
+  9. Analysis & Synthesis DSP Block Usage Summary
+ 10. State Machine - |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver
+ 11. State Machine - |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init
+ 12. Registers Removed During Synthesis
+ 13. General Register Statistics
+ 14. Inverted Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Source assignments for audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
+ 17. Source assignments for audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
+ 18. Source assignments for audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
+ 19. Source assignments for audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram
+ 20. Parameter Settings for User Entity Instance: clock_generator:my_clock_gen
+ 21. Parameter Settings for User Entity Instance: clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio
+ 22. Parameter Settings for User Entity Instance: audio_and_video_config:cfg
+ 23. Parameter Settings for User Entity Instance: audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz
+ 24. Parameter Settings for User Entity Instance: audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize
+ 25. Parameter Settings for User Entity Instance: audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller
+ 26. Parameter Settings for User Entity Instance: audio_codec:codec
+ 27. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer
+ 28. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter
+ 29. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO
+ 30. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 31. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO
+ 32. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 33. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer
+ 34. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO
+ 35. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO
+ 36. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO
+ 37. Parameter Settings for User Entity Instance: audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO
+ 38. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult1
+ 39. Parameter Settings for Inferred Entity Instance: lpm_divide:Div1
+ 40. Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0
+ 41. Parameter Settings for Inferred Entity Instance: lpm_divide:Div0
+ 42. altpll Parameter Settings by Entity Instance
+ 43. scfifo Parameter Settings by Entity Instance
+ 44. lpm_mult Parameter Settings by Entity Instance
+ 45. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller"
+ 46. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize"
+ 47. Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz"
+ 48. Post-Synthesis Netlist Statistics for Top Partition
+ 49. Elapsed Time Per Partition
+ 50. Analysis & Synthesis Messages
 
 
 
@@ -76,19 +82,19 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                                     ;
 +------------------------------------+-------------------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Mar 03 17:37:01 2020                       ;
+; Analysis & Synthesis Status        ; Successful - Wed Mar 04 17:18:34 2020                       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition ;
 ; Revision Name                      ; part1                                                       ;
 ; Top-level Entity Name              ; part1                                                       ;
 ; Family                             ; Cyclone IV E                                                ;
-; Total logic elements               ; 542                                                         ;
-;     Total combinational functions  ; 536                                                         ;
-;     Dedicated logic registers      ; 293                                                         ;
-; Total registers                    ; 293                                                         ;
+; Total logic elements               ; 1,429                                                       ;
+;     Total combinational functions  ; 1,415                                                       ;
+;     Dedicated logic registers      ; 339                                                         ;
+; Total registers                    ; 339                                                         ;
 ; Total pins                         ; 49                                                          ;
 ; Total virtual pins                 ; 0                                                           ;
 ; Total memory bits                  ; 12,288                                                      ;
-; Embedded Multiplier 9-bit elements ; 0                                                           ;
+; Embedded Multiplier 9-bit elements ; 12                                                          ;
 ; Total PLLs                         ; 1                                                           ;
 +------------------------------------+-------------------------------------------------------------+
 
@@ -192,7 +198,14 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-16        ;   0.0%      ;
+;     Processor 2            ;   0.0%      ;
+;     Processor 3            ;   0.0%      ;
+;     Processor 4            ;   0.0%      ;
+;     Processor 5            ;   0.0%      ;
+;     Processor 6            ;   0.0%      ;
+;     Processor 7            ;   0.0%      ;
+;     Processor 8            ;   0.0%      ;
+;     Processors 9-16        ;   0.0%      ;
 +----------------------------+-------------+
 
 
@@ -232,6 +245,20 @@ https://fpgasoftware.intel.com/eula.
 ; db/cntr_v9b.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_v9b.tdf                    ;         ;
 ; db/cntr_ca7.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_ca7.tdf                    ;         ;
 ; db/cntr_0ab.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/cntr_0ab.tdf                    ;         ;
+; lpm_mult.tdf                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_mult.tdf                            ;         ;
+; lpm_add_sub.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_add_sub.inc                         ;         ;
+; multcore.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/multcore.inc                            ;         ;
+; bypassff.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/bypassff.inc                            ;         ;
+; altshift.inc                       ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/altshift.inc                            ;         ;
+; db/mult_3dt.tdf                    ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/mult_3dt.tdf                    ;         ;
+; lpm_divide.tdf                     ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/lpm_divide.tdf                          ;         ;
+; abs_divider.inc                    ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/abs_divider.inc                         ;         ;
+; sign_div_unsign.inc                ; yes             ; Megafunction                 ; c:/intelfpga_lite/19.1/quartus/libraries/megafunctions/sign_div_unsign.inc                     ;         ;
+; db/lpm_divide_jkm.tdf              ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/lpm_divide_jkm.tdf              ;         ;
+; db/sign_div_unsign_bnh.tdf         ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/sign_div_unsign_bnh.tdf         ;         ;
+; db/alt_u_div_aaf.tdf               ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/alt_u_div_aaf.tdf               ;         ;
+; db/add_sub_7pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/add_sub_7pc.tdf                 ;         ;
+; db/add_sub_8pc.tdf                 ; yes             ; Auto-Generated Megafunction  ; C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/add_sub_8pc.tdf                 ;         ;
 +------------------------------------+-----------------+------------------------------+------------------------------------------------------------------------------------------------+---------+
 
 
@@ -240,34 +267,34 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+----------------+
 ; Resource                                    ; Usage          ;
 +---------------------------------------------+----------------+
-; Estimated Total logic elements              ; 542            ;
+; Estimated Total logic elements              ; 1,429          ;
 ;                                             ;                ;
-; Total combinational functions               ; 536            ;
+; Total combinational functions               ; 1415           ;
 ; Logic element usage by number of LUT inputs ;                ;
-;     -- 4 input functions                    ; 224            ;
-;     -- 3 input functions                    ; 129            ;
-;     -- <=2 input functions                  ; 183            ;
+;     -- 4 input functions                    ; 547            ;
+;     -- 3 input functions                    ; 443            ;
+;     -- <=2 input functions                  ; 425            ;
 ;                                             ;                ;
 ; Logic elements by mode                      ;                ;
-;     -- normal mode                          ; 436            ;
-;     -- arithmetic mode                      ; 100            ;
+;     -- normal mode                          ; 1118           ;
+;     -- arithmetic mode                      ; 297            ;
 ;                                             ;                ;
-; Total registers                             ; 293            ;
-;     -- Dedicated logic registers            ; 293            ;
+; Total registers                             ; 339            ;
+;     -- Dedicated logic registers            ; 339            ;
 ;     -- I/O registers                        ; 0              ;
 ;                                             ;                ;
 ; I/O pins                                    ; 49             ;
 ; Total memory bits                           ; 12288          ;
 ;                                             ;                ;
-; Embedded Multiplier 9-bit elements          ; 0              ;
+; Embedded Multiplier 9-bit elements          ; 12             ;
 ;                                             ;                ;
 ; Total PLLs                                  ; 1              ;
 ;     -- PLLs                                 ; 1              ;
 ;                                             ;                ;
 ; Maximum fan-out node                        ; CLOCK_50~input ;
-; Maximum fan-out                             ; 389            ;
-; Total fan-out                               ; 4390           ;
-; Average fan-out                             ; 4.28           ;
+; Maximum fan-out                             ; 408            ;
+; Total fan-out                               ; 7361           ;
+; Average fan-out                             ; 3.68           ;
 +---------------------------------------------+----------------+
 
 
@@ -276,53 +303,66 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 ; Compilation Hierarchy Node                                    ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                                                                                                                      ; Entity Name                      ; Library Name ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
-; |part1                                                        ; 536 (25)            ; 293 (0)                   ; 12288       ; 0            ; 0       ; 0         ; 49   ; 0            ; |part1                                                                                                                                                                                                                   ; part1                            ; work         ;
+; |part1                                                        ; 1415 (1)            ; 339 (0)                   ; 12288       ; 12           ; 0       ; 6         ; 49   ; 0            ; |part1                                                                                                                                                                                                                   ; part1                            ; work         ;
+;    |UART_RX:uart_1|                                           ; 80 (80)             ; 46 (46)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|UART_RX:uart_1                                                                                                                                                                                                    ; UART_RX                          ; work         ;
 ;    |audio_and_video_config:cfg|                               ; 185 (10)            ; 65 (9)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg                                                                                                                                                                                        ; audio_and_video_config           ; work         ;
 ;       |Altera_UP_I2C:I2C_Controller|                          ; 38 (38)             ; 18 (18)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller                                                                                                                                                           ; Altera_UP_I2C                    ; work         ;
 ;       |Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|      ; 121 (121)           ; 25 (25)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize                                                                                                                                       ; Altera_UP_I2C_AV_Auto_Initialize ; work         ;
 ;       |Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz| ; 16 (16)             ; 13 (13)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz                                                                                                                                  ; Altera_UP_Slow_Clock_Generator   ; work         ;
-;    |audio_codec:codec|                                        ; 326 (10)            ; 228 (2)                   ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                 ; audio_codec                      ; work         ;
-;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 162 (47)            ; 112 (40)                  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                           ; Altera_UP_Audio_In_Deserializer  ; work         ;
+;    |audio_codec:codec|                                        ; 332 (10)            ; 228 (2)                   ; 12288       ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec                                                                                                                                                                                                 ; audio_codec                      ; work         ;
+;       |Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer| ; 166 (47)            ; 112 (40)                  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer                                                                                                                                           ; Altera_UP_Audio_In_Deserializer  ; work         ;
 ;          |Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|  ; 10 (10)             ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter                                                                                         ; Altera_UP_Audio_Bit_Counter      ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO              ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                           ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                ; scfifo_o441                      ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 52 (29)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                           ; a_dpfifo_bs31                    ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|     ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO              ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                           ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                ; scfifo_o441                      ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 53 (29)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                           ; a_dpfifo_bs31                    ; work         ;
 ;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram   ; altsyncram_9tb1                  ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr           ; cntr_0ab                         ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                         ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                         ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb       ; cntr_v9b                         ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO              ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                           ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 53 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; scfifo_o441                      ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 53 (30)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; a_dpfifo_bs31                    ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|    ; 56 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO                                                                                           ; Altera_UP_SYNC_FIFO              ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 56 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                          ; scfifo                           ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 56 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                               ; scfifo_o441                      ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 56 (31)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                          ; a_dpfifo_bs31                    ; work         ;
 ;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram  ; altsyncram_9tb1                  ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr          ; cntr_0ab                         ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                         ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 9 (9)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter   ; cntr_ca7                         ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 8 (8)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb      ; cntr_v9b                         ; work         ;
-;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 153 (51)            ; 108 (42)                  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                             ; Altera_UP_Audio_Out_Serializer   ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 51 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                             ; Altera_UP_SYNC_FIFO              ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 51 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                            ; scfifo                           ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 51 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                 ; scfifo_o441                      ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 51 (29)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                            ; a_dpfifo_bs31                    ; work         ;
+;       |Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|   ; 155 (51)            ; 108 (42)                  ; 6144        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer                                                                                                                                             ; Altera_UP_Audio_Out_Serializer   ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|    ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO                                                                                             ; Altera_UP_SYNC_FIFO              ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO                                                                            ; scfifo                           ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                 ; scfifo_o441                      ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 52 (29)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                            ; a_dpfifo_bs31                    ; work         ;
 ;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram    ; altsyncram_9tb1                  ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr            ; cntr_0ab                         ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter     ; cntr_ca7                         ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter     ; cntr_ca7                         ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb        ; cntr_v9b                         ; work         ;
-;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 51 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO              ; work         ;
-;             |scfifo:Sync_FIFO|                                ; 51 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                           ; work         ;
-;                |scfifo_o441:auto_generated|                   ; 51 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                ; scfifo_o441                      ; work         ;
-;                   |a_dpfifo_bs31:dpfifo|                      ; 51 (27)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                           ; a_dpfifo_bs31                    ; work         ;
+;          |Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|   ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO                                                                                            ; Altera_UP_SYNC_FIFO              ; work         ;
+;             |scfifo:Sync_FIFO|                                ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO                                                                           ; scfifo                           ; work         ;
+;                |scfifo_o441:auto_generated|                   ; 52 (0)              ; 33 (0)                    ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated                                                ; scfifo_o441                      ; work         ;
+;                   |a_dpfifo_bs31:dpfifo|                      ; 52 (27)             ; 33 (13)                   ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo                           ; a_dpfifo_bs31                    ; work         ;
 ;                      |altsyncram_9tb1:FIFOram|                ; 0 (0)               ; 0 (0)                     ; 3072        ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram   ; altsyncram_9tb1                  ; work         ;
 ;                      |cmpr_ks8:three_comparison|              ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cmpr_ks8:three_comparison ; cmpr_ks8                         ; work         ;
 ;                      |cntr_0ab:wr_ptr|                        ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr           ; cntr_0ab                         ; work         ;
-;                      |cntr_ca7:usedw_counter|                 ; 7 (7)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                         ; work         ;
+;                      |cntr_ca7:usedw_counter|                 ; 8 (8)               ; 7 (7)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_ca7:usedw_counter    ; cntr_ca7                         ; work         ;
 ;                      |cntr_v9b:rd_ptr_msb|                    ; 7 (7)               ; 6 (6)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_v9b:rd_ptr_msb       ; cntr_v9b                         ; work         ;
 ;       |Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:ADC_Left_Right_Clock_Edges                                                                                                                                                 ; Altera_UP_Clock_Edge             ; work         ;
 ;       |Altera_UP_Clock_Edge:Bit_Clock_Edges|                  ; 1 (1)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges                                                                                                                                                            ; Altera_UP_Clock_Edge             ; work         ;
 ;       |Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges|       ; 0 (0)               ; 2 (2)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|audio_codec:codec|Altera_UP_Clock_Edge:DAC_Left_Right_Clock_Edges                                                                                                                                                 ; Altera_UP_Clock_Edge             ; work         ;
 ;    |clock_generator:my_clock_gen|                             ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|clock_generator:my_clock_gen                                                                                                                                                                                      ; clock_generator                  ; work         ;
 ;       |altpll:DE_Clock_Generator_Audio|                       ; 0 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio                                                                                                                                                      ; altpll                           ; work         ;
+;    |lpm_divide:Div0|                                          ; 396 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div0                                                                                                                                                                                                   ; lpm_divide                       ; work         ;
+;       |lpm_divide_jkm:auto_generated|                         ; 396 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div0|lpm_divide_jkm:auto_generated                                                                                                                                                                     ; lpm_divide_jkm                   ; work         ;
+;          |sign_div_unsign_bnh:divider|                        ; 396 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div0|lpm_divide_jkm:auto_generated|sign_div_unsign_bnh:divider                                                                                                                                         ; sign_div_unsign_bnh              ; work         ;
+;             |alt_u_div_aaf:divider|                           ; 396 (396)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div0|lpm_divide_jkm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider                                                                                                                   ; alt_u_div_aaf                    ; work         ;
+;    |lpm_divide:Div1|                                          ; 397 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div1                                                                                                                                                                                                   ; lpm_divide                       ; work         ;
+;       |lpm_divide_jkm:auto_generated|                         ; 397 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div1|lpm_divide_jkm:auto_generated                                                                                                                                                                     ; lpm_divide_jkm                   ; work         ;
+;          |sign_div_unsign_bnh:divider|                        ; 397 (0)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div1|lpm_divide_jkm:auto_generated|sign_div_unsign_bnh:divider                                                                                                                                         ; sign_div_unsign_bnh              ; work         ;
+;             |alt_u_div_aaf:divider|                           ; 397 (397)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |part1|lpm_divide:Div1|lpm_divide_jkm:auto_generated|sign_div_unsign_bnh:divider|alt_u_div_aaf:divider                                                                                                                   ; alt_u_div_aaf                    ; work         ;
+;    |lpm_mult:Mult0|                                           ; 12 (0)              ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |part1|lpm_mult:Mult0                                                                                                                                                                                                    ; lpm_mult                         ; work         ;
+;       |mult_3dt:auto_generated|                               ; 12 (12)             ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |part1|lpm_mult:Mult0|mult_3dt:auto_generated                                                                                                                                                                            ; mult_3dt                         ; work         ;
+;    |lpm_mult:Mult1|                                           ; 12 (0)              ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |part1|lpm_mult:Mult1                                                                                                                                                                                                    ; lpm_mult                         ; work         ;
+;       |mult_3dt:auto_generated|                               ; 12 (12)             ; 0 (0)                     ; 0           ; 6            ; 0       ; 3         ; 0    ; 0            ; |part1|lpm_mult:Mult1|mult_3dt:auto_generated                                                                                                                                                                            ; mult_3dt                         ; work         ;
 +---------------------------------------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+----------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -337,6 +377,24 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|ALTSYNCRAM   ; AUTO ; Simple Dual Port ; 128          ; 24           ; 128          ; 24           ; 3072 ; None ;
 ; audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|Altera_UP_SYNC_FIFO:Audio_Out_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|ALTSYNCRAM  ; AUTO ; Simple Dual Port ; 128          ; 24           ; 128          ; 24           ; 3072 ; None ;
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+------+------------------+--------------+--------------+--------------+--------------+------+------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis DSP Block Usage Summary        ;
++---------------------------------------+-------------+
+; Statistic                             ; Number Used ;
++---------------------------------------+-------------+
+; Simple Multipliers (9-bit)            ; 0           ;
+; Simple Multipliers (18-bit)           ; 6           ;
+; Embedded Multiplier Blocks            ; --          ;
+; Embedded Multiplier 9-bit elements    ; 12          ;
+; Signed Embedded Multipliers           ; 0           ;
+; Unsigned Embedded Multipliers         ; 6           ;
+; Mixed Sign Embedded Multipliers       ; 0           ;
+; Variable Sign Embedded Multipliers    ; 0           ;
+; Dedicated Input Shift Register Chains ; 0           ;
++---------------------------------------+-------------+
+Note: number of Embedded Multiplier Blocks used is only available after a successful fit.
 
 
 Encoding Type:  One-Hot
@@ -378,13 +436,15 @@ Encoding Type:  One-Hot
 ; Register name                                                                                 ; Reason for Removal                                             ;
 +-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
 ; audio_and_video_config:cfg|num_bits_to_transfer[1,2]                                          ; Merged with audio_and_video_config:cfg|num_bits_to_transfer[0] ;
+; UART_RX:uart_1|statemachine[3]                                                                ; Merged with UART_RX:uart_1|statemachine[2]                     ;
+; UART_RX:uart_1|statemachine[2]                                                                ; Stuck at GND due to stuck port data_in                         ;
 ; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~2                   ; Lost fanout                                                    ;
 ; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~3                   ; Lost fanout                                                    ;
 ; audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|s_i2c_transceiver~4                   ; Lost fanout                                                    ;
 ; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~2 ; Lost fanout                                                    ;
 ; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~3 ; Lost fanout                                                    ;
 ; audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|s_i2c_auto_init~4 ; Lost fanout                                                    ;
-; Total Number of Removed Registers = 8                                                         ;                                                                ;
+; Total Number of Removed Registers = 10                                                        ;                                                                ;
 +-----------------------------------------------------------------------------------------------+----------------------------------------------------------------+
 
 
@@ -393,14 +453,25 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 293   ;
-; Number of registers using Synchronous Clear  ; 91    ;
+; Total registers                              ; 339   ;
+; Number of registers using Synchronous Clear  ; 96    ;
 ; Number of registers using Synchronous Load   ; 108   ;
-; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Clear ; 46    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 179   ;
+; Number of registers using Clock Enable       ; 195   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
+
+
++--------------------------------------------------+
+; Inverted Register Statistics                     ;
++----------------------------------------+---------+
+; Inverted Register                      ; Fan out ;
++----------------------------------------+---------+
+; UART_RX:uart_1|statemachine[0]         ; 16      ;
+; UART_RX:uart_1|statemachine[1]         ; 12      ;
+; Total number of inverted registers = 2 ;         ;
++----------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -409,15 +480,18 @@ Encoding Type:  One-Hot
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                                                      ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 ; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|rom_address_counter[3]                                       ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[0]                                                                  ;
-; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[22]                                            ;
-; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|data_to_transfer[4]                                                                                           ;
-; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[9]                                          ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_byte[3]                                                                  ;
+; 3:1                ; 24 bits   ; 48 LEs        ; 24 LEs               ; 24 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|data_in_shift_reg[3]                                             ;
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|data_to_transfer[1]                                                                                           ;
+; 3:1                ; 10 bits   ; 20 LEs        ; 10 LEs               ; 10 LEs                 ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz|clk_counter[10]                                         ;
 ; 4:1                ; 5 bits    ; 10 LEs        ; 10 LEs               ; 0 LEs                  ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter|bit_counter[0] ;
 ; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[1]                                                  ;
-; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[6]                                                  ;
+; 5:1                ; 4 bits    ; 12 LEs        ; 8 LEs                ; 4 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize|data_out[2]                                                  ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |part1|audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller|current_bit[1]                                                                   ;
-; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[23]                                             ;
+; 6:1                ; 23 bits   ; 92 LEs        ; 46 LEs               ; 46 LEs                 ; Yes        ; |part1|audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer|data_out_shift_reg[2]                                              ;
+; 11:1               ; 3 bits    ; 21 LEs        ; 3 LEs                ; 18 LEs                 ; Yes        ; |part1|UART_RX:uart_1|cacheIndex[2]                                                                                                             ;
+; 7:1                ; 5 bits    ; 20 LEs        ; 5 LEs                ; 15 LEs                 ; Yes        ; |part1|UART_RX:uart_1|pointer[4]                                                                                                                ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |part1|UART_RX:uart_1|statemachine[0]                                                                                                           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------------------------------------------+
 
 
@@ -1113,6 +1187,122 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult1                     ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 24           ; Untyped             ;
+; LPM_WIDTHB                                     ; 20           ; Untyped             ;
+; LPM_WIDTHP                                     ; 44           ; Untyped             ;
+; LPM_WIDTHR                                     ; 44           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_3dt     ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div1 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 24             ; Untyped                ;
+; LPM_WIDTHD             ; 24             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_jkm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_mult:Mult0                     ;
++------------------------------------------------+--------------+---------------------+
+; Parameter Name                                 ; Value        ; Type                ;
++------------------------------------------------+--------------+---------------------+
+; AUTO_CARRY_CHAINS                              ; ON           ; AUTO_CARRY          ;
+; IGNORE_CARRY_BUFFERS                           ; OFF          ; IGNORE_CARRY        ;
+; AUTO_CASCADE_CHAINS                            ; ON           ; AUTO_CASCADE        ;
+; IGNORE_CASCADE_BUFFERS                         ; OFF          ; IGNORE_CASCADE      ;
+; LPM_WIDTHA                                     ; 24           ; Untyped             ;
+; LPM_WIDTHB                                     ; 20           ; Untyped             ;
+; LPM_WIDTHP                                     ; 44           ; Untyped             ;
+; LPM_WIDTHR                                     ; 44           ; Untyped             ;
+; LPM_WIDTHS                                     ; 1            ; Untyped             ;
+; LPM_REPRESENTATION                             ; UNSIGNED     ; Untyped             ;
+; LPM_PIPELINE                                   ; 0            ; Untyped             ;
+; LATENCY                                        ; 0            ; Untyped             ;
+; INPUT_A_IS_CONSTANT                            ; NO           ; Untyped             ;
+; INPUT_B_IS_CONSTANT                            ; NO           ; Untyped             ;
+; USE_EAB                                        ; OFF          ; Untyped             ;
+; MAXIMIZE_SPEED                                 ; 5            ; Untyped             ;
+; DEVICE_FAMILY                                  ; Cyclone IV E ; Untyped             ;
+; CARRY_CHAIN                                    ; MANUAL       ; Untyped             ;
+; APEX20K_TECHNOLOGY_MAPPER                      ; LUT          ; TECH_MAPPER_APEX20K ;
+; DEDICATED_MULTIPLIER_CIRCUITRY                 ; AUTO         ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_INPUT_WIDTH_FOR_AUTO  ; 0            ; Untyped             ;
+; DEDICATED_MULTIPLIER_MIN_OUTPUT_WIDTH_FOR_AUTO ; 0            ; Untyped             ;
+; CBXI_PARAMETER                                 ; mult_3dt     ; Untyped             ;
+; INPUT_A_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; INPUT_B_FIXED_VALUE                            ; Bx           ; Untyped             ;
+; USE_AHDL_IMPLEMENTATION                        ; OFF          ; Untyped             ;
++------------------------------------------------+--------------+---------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for Inferred Entity Instance: lpm_divide:Div0 ;
++------------------------+----------------+------------------------+
+; Parameter Name         ; Value          ; Type                   ;
++------------------------+----------------+------------------------+
+; LPM_WIDTHN             ; 24             ; Untyped                ;
+; LPM_WIDTHD             ; 24             ; Untyped                ;
+; LPM_NREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_DREPRESENTATION    ; UNSIGNED       ; Untyped                ;
+; LPM_PIPELINE           ; 0              ; Untyped                ;
+; LPM_REMAINDERPOSITIVE  ; TRUE           ; Untyped                ;
+; MAXIMIZE_SPEED         ; 5              ; Untyped                ;
+; CBXI_PARAMETER         ; lpm_divide_jkm ; Untyped                ;
+; CARRY_CHAIN            ; MANUAL         ; Untyped                ;
+; OPTIMIZE_FOR_SPEED     ; 5              ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON             ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF            ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON             ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF            ; IGNORE_CASCADE         ;
++------------------------+----------------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
 +----------------------------------------------------------------------------------------------+
 ; altpll Parameter Settings by Entity Instance                                                 ;
 +-------------------------------+--------------------------------------------------------------+
@@ -1163,6 +1353,37 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------------------+------------------------------------------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------+
+; lpm_mult Parameter Settings by Entity Instance         ;
++---------------------------------------+----------------+
+; Name                                  ; Value          ;
++---------------------------------------+----------------+
+; Number of entity instances            ; 2              ;
+; Entity Instance                       ; lpm_mult:Mult1 ;
+;     -- LPM_WIDTHA                     ; 24             ;
+;     -- LPM_WIDTHB                     ; 20             ;
+;     -- LPM_WIDTHP                     ; 44             ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED       ;
+;     -- INPUT_A_IS_CONSTANT            ; NO             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO             ;
+;     -- USE_EAB                        ; OFF            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
+; Entity Instance                       ; lpm_mult:Mult0 ;
+;     -- LPM_WIDTHA                     ; 24             ;
+;     -- LPM_WIDTHB                     ; 20             ;
+;     -- LPM_WIDTHP                     ; 44             ;
+;     -- LPM_REPRESENTATION             ; UNSIGNED       ;
+;     -- INPUT_A_IS_CONSTANT            ; NO             ;
+;     -- INPUT_B_IS_CONSTANT            ; NO             ;
+;     -- USE_EAB                        ; OFF            ;
+;     -- DEDICATED_MULTIPLIER_CIRCUITRY ; AUTO           ;
+;     -- INPUT_A_FIXED_VALUE            ; Bx             ;
+;     -- INPUT_B_FIXED_VALUE            ; Bx             ;
++---------------------------------------+----------------+
+
+
 +-------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller"                                     ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
@@ -1195,44 +1416,40 @@ Note: In order to hide this table in the UI and the text report file, please set
 +--------------+--------+----------+---------------------------------------------------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UART_RX:uart_1"                                                                     ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; DATA ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
 ; boundary_port         ; 49                          ;
-; cycloneiii_ff         ; 293                         ;
+; cycloneiii_ff         ; 339                         ;
+;     CLR               ; 30                          ;
 ;     ENA               ; 48                          ;
+;     ENA CLR           ; 11                          ;
+;     ENA CLR SCLR      ; 5                           ;
 ;     ENA SCLR          ; 23                          ;
 ;     ENA SCLR SLD      ; 23                          ;
 ;     ENA SLD           ; 85                          ;
 ;     SCLR              ; 45                          ;
 ;     plain             ; 69                          ;
-; cycloneiii_io_obuf    ; 1                           ;
-; cycloneiii_lcell_comb ; 536                         ;
-;     arith             ; 100                         ;
-;         2 data inputs ; 76                          ;
-;         3 data inputs ; 24                          ;
-;     normal            ; 436                         ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 18                          ;
-;         2 data inputs ; 88                          ;
-;         3 data inputs ; 105                         ;
-;         4 data inputs ; 224                         ;
+; cycloneiii_io_obuf    ; 37                          ;
+; cycloneiii_lcell_comb ; 1415                        ;
+;     arith             ; 297                         ;
+;         2 data inputs ; 97                          ;
+;         3 data inputs ; 200                         ;
+;     normal            ; 1118                        ;
+;         0 data inputs ; 25                          ;
+;         1 data inputs ; 30                          ;
+;         2 data inputs ; 273                         ;
+;         3 data inputs ; 243                         ;
+;         4 data inputs ; 547                         ;
+; cycloneiii_mac_mult   ; 6                           ;
+; cycloneiii_mac_out    ; 6                           ;
 ; cycloneiii_pll        ; 1                           ;
 ; cycloneiii_ram_block  ; 96                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 2.34                        ;
+; Max LUT depth         ; 35.10                       ;
+; Average LUT depth     ; 15.53                       ;
 +-----------------------+-----------------------------+
 
 
@@ -1241,7 +1458,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:16     ;
 +----------------+--------------+
 
 
@@ -1251,7 +1468,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
-    Info: Processing started: Tue Mar 03 17:36:51 2020
+    Info: Processing started: Wed Mar 04 17:18:09 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off part1 -c part1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 16 of the 16 processors detected
@@ -1286,7 +1503,7 @@ Info (12021): Found 1 design units, including 1 entities, in source file altera_
 Info (12021): Found 1 design units, including 1 entities, in source file uart_rx.v
     Info (12023): Found entity 1: UART_RX File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 1
 Info (12127): Elaborating entity "part1" for the top level hierarchy
-Info (12128): Elaborating entity "UART_RX" for hierarchy "UART_RX:uart_1" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 73
+Info (12128): Elaborating entity "UART_RX" for hierarchy "UART_RX:uart_1" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 86
 Warning (10230): Verilog HDL assignment warning at UART_RX.v(51): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 51
 Warning (10230): Verilog HDL assignment warning at UART_RX.v(54): truncated value with size 32 to match size of target (4) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 54
 Warning (10230): Verilog HDL assignment warning at UART_RX.v(69): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 69
@@ -1295,7 +1512,7 @@ Warning (10230): Verilog HDL assignment warning at UART_RX.v(85): truncated valu
 Warning (10230): Verilog HDL assignment warning at UART_RX.v(99): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 99
 Warning (10230): Verilog HDL assignment warning at UART_RX.v(112): truncated value with size 32 to match size of target (5) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 112
 Warning (10230): Verilog HDL assignment warning at UART_RX.v(147): truncated value with size 32 to match size of target (18) File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 147
-Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 97
+Info (12128): Elaborating entity "clock_generator" for hierarchy "clock_generator:my_clock_gen" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 110
 Info (12128): Elaborating entity "altpll" for hierarchy "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
 Info (12130): Elaborated megafunction instantiation "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
 Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_Clock_Generator_Audio" with the following parameter: File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
@@ -1355,11 +1572,11 @@ Info (12133): Instantiated megafunction "clock_generator:my_clock_gen|altpll:DE_
     Info (12134): Parameter "port_sclkout0" = "PORT_UNUSED"
     Info (12134): Parameter "port_sclkout1" = "PORT_UNUSED"
     Info (12134): Parameter "valid_lock_multiplier" = "1"
-Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 107
+Info (12128): Elaborating entity "audio_and_video_config" for hierarchy "audio_and_video_config:cfg" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 120
 Info (12128): Elaborating entity "Altera_UP_Slow_Clock_Generator" for hierarchy "audio_and_video_config:cfg|Altera_UP_Slow_Clock_Generator:Clock_Generator_400KHz" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v Line: 180
 Info (12128): Elaborating entity "Altera_UP_I2C_AV_Auto_Initialize" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C_AV_Auto_Initialize:Auto_Initialize" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v Line: 205
 Info (12128): Elaborating entity "Altera_UP_I2C" for hierarchy "audio_and_video_config:cfg|Altera_UP_I2C:I2C_Controller" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_and_video_config.v Line: 252
-Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 128
+Info (12128): Elaborating entity "audio_codec" for hierarchy "audio_codec:codec" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 141
 Info (12128): Elaborating entity "Altera_UP_Clock_Edge" for hierarchy "audio_codec:codec|Altera_UP_Clock_Edge:Bit_Clock_Edges" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v Line: 181
 Info (12128): Elaborating entity "Altera_UP_Audio_In_Deserializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v Line: 238
 Info (12128): Elaborating entity "Altera_UP_Audio_Bit_Counter" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_Audio_Bit_Counter:Audio_Out_Bit_Counter" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/altera_up_audio_in_deserializer.v Line: 197
@@ -1401,58 +1618,161 @@ Info (12021): Found 1 design units, including 1 entities, in source file db/cntr
 Info (12128): Elaborating entity "cntr_0ab" for hierarchy "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|cntr_0ab:wr_ptr" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/a_dpfifo_bs31.tdf Line: 59
 Info (12128): Elaborating entity "Altera_UP_Audio_Out_Serializer" for hierarchy "audio_codec:codec|Altera_UP_Audio_Out_Serializer:Audio_Out_Serializer" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/audio_codec.v Line: 267
 Warning (12030): Port "clk" on the entity instantiation of "DE_Clock_Generator_Audio" is connected to a signal of width 1. The formal width of the signal in the module is 6.  The extra bits will be left dangling without any fan-out logic. File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/clock_generator.v Line: 134
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[12]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 398
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[13]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 428
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[14]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 458
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[15]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 488
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[16]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 518
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[17]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 548
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[18]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 578
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[19]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 608
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[20]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 638
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[21]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 668
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[22]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 698
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[23]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 728
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[12]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 398
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[13]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 428
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[14]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 458
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[15]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 488
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[16]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 518
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[17]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 548
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[18]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 578
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[19]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 608
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[20]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 638
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[21]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 668
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[22]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 698
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[23]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 728
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following RAM node(s):
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[12]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 398
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[13]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 428
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[14]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 458
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[15]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 488
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[16]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 518
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[17]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 548
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[18]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 578
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[19]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 608
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[20]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 638
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[21]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 668
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[22]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 698
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Left_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[23]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 728
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[12]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 398
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[13]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 428
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[14]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 458
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[15]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 488
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[16]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 518
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[17]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 548
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[18]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 578
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[19]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 608
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[20]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 638
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[21]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 668
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[22]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 698
+        Warning (14320): Synthesized away node "audio_codec:codec|Altera_UP_Audio_In_Deserializer:Audio_In_Deserializer|Altera_UP_SYNC_FIFO:Audio_In_Right_Channel_FIFO|scfifo:Sync_FIFO|scfifo_o441:auto_generated|a_dpfifo_bs31:dpfifo|altsyncram_9tb1:FIFOram|q_b[23]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/altsyncram_9tb1.tdf Line: 728
+Info (278001): Inferred 4 megafunctions from design logic
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult1" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 49
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div1" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 49
+    Info (278003): Inferred multiplier megafunction ("lpm_mult") from the following logic: "Mult0" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 48
+    Info (278004): Inferred divider/modulo megafunction ("lpm_divide") from the following logic: "Div0" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 48
+Info (12130): Elaborated megafunction instantiation "lpm_mult:Mult1" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 49
+Info (12133): Instantiated megafunction "lpm_mult:Mult1" with the following parameter: File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 49
+    Info (12134): Parameter "LPM_WIDTHA" = "24"
+    Info (12134): Parameter "LPM_WIDTHB" = "20"
+    Info (12134): Parameter "LPM_WIDTHP" = "44"
+    Info (12134): Parameter "LPM_WIDTHR" = "44"
+    Info (12134): Parameter "LPM_WIDTHS" = "1"
+    Info (12134): Parameter "LPM_REPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "INPUT_A_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "INPUT_B_IS_CONSTANT" = "NO"
+    Info (12134): Parameter "MAXIMIZE_SPEED" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/mult_3dt.tdf
+    Info (12023): Found entity 1: mult_3dt File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/mult_3dt.tdf Line: 31
+Info (12130): Elaborated megafunction instantiation "lpm_divide:Div1" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 49
+Info (12133): Instantiated megafunction "lpm_divide:Div1" with the following parameter: File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 49
+    Info (12134): Parameter "LPM_WIDTHN" = "24"
+    Info (12134): Parameter "LPM_WIDTHD" = "24"
+    Info (12134): Parameter "LPM_NREPRESENTATION" = "UNSIGNED"
+    Info (12134): Parameter "LPM_DREPRESENTATION" = "UNSIGNED"
+Info (12021): Found 1 design units, including 1 entities, in source file db/lpm_divide_jkm.tdf
+    Info (12023): Found entity 1: lpm_divide_jkm File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/lpm_divide_jkm.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/sign_div_unsign_bnh.tdf
+    Info (12023): Found entity 1: sign_div_unsign_bnh File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/sign_div_unsign_bnh.tdf Line: 25
+Info (12021): Found 1 design units, including 1 entities, in source file db/alt_u_div_aaf.tdf
+    Info (12023): Found entity 1: alt_u_div_aaf File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/alt_u_div_aaf.tdf Line: 27
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_7pc.tdf
+    Info (12023): Found entity 1: add_sub_7pc File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/add_sub_7pc.tdf Line: 23
+Info (12021): Found 1 design units, including 1 entities, in source file db/add_sub_8pc.tdf
+    Info (12023): Found entity 1: add_sub_8pc File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/add_sub_8pc.tdf Line: 23
+Warning (14284): Synthesized away the following node(s):
+    Warning (14285): Synthesized away the following DSP element node(s):
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_3dt:auto_generated|mac_mult7" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/mult_3dt.tdf Line: 67
+        Warning (14320): Synthesized away node "lpm_mult:Mult0|mult_3dt:auto_generated|mac_out8" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/mult_3dt.tdf Line: 91
+        Warning (14320): Synthesized away node "lpm_mult:Mult1|mult_3dt:auto_generated|mac_mult7" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/mult_3dt.tdf Line: 67
+        Warning (14320): Synthesized away node "lpm_mult:Mult1|mult_3dt:auto_generated|mac_out8" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/db/mult_3dt.tdf Line: 91
+Info (13014): Ignored 72 buffer(s)
+    Info (13019): Ignored 72 SOFT buffer(s)
+Warning (13039): The following bidirectional pins have no drivers
+    Warning (13040): bidirectional pin "GPIO[1]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[0]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[2]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[4]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[5]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[6]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[7]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[8]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[9]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[10]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[11]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[12]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[13]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[14]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[15]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[16]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[17]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[18]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[19]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[20]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[21]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[22]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[23]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[24]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[25]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[26]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[27]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[28]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[29]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[30]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[31]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[32]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[33]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[34]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+    Warning (13040): bidirectional pin "GPIO[35]" has no driver File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+Warning (13032): The following tri-state nodes are fed by constants
+    Warning (13033): The pin "GPIO[3]" is fed by VCC File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
+Info (13000): Registers with preset signals will power-up high File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/UART_RX.v Line: 44
+Info (13003): DEV_CLRn pin will set, and not reset, register with preset signal due to NOT Gate Push-Back
+Warning (13009): TRI or OPNDRN buffers permanently enabled
+    Warning (13010): Node "GPIO[3]~synth" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
 Info (286030): Timing-Driven Synthesis is running
 Info (17049): 6 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 1 node(s), including 0 DDIO, 1 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 36 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "GPIO[0]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[1]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[2]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[3]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[4]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[5]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[6]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[7]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[8]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[9]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[10]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[11]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[12]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[13]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[14]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[15]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[16]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[17]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[18]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[19]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[20]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[21]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[22]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[23]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[24]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[25]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[26]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[27]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[28]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[29]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[30]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[31]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[32]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[33]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[34]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-    Warning (15610): No output dependent on input pin "GPIO[35]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 18
-Info (21057): Implemented 692 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 45 input pins
+Warning (21074): Design contains 2 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "SW[0]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 8
+    Warning (15610): No output dependent on input pin "SW[1]" File: C:/Users/Cade/Documents/GitHub/refactored-succotash/DE2-115/part1.v Line: 8
+Info (21057): Implemented 1589 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 9 input pins
     Info (21059): Implemented 3 output pins
-    Info (21060): Implemented 1 bidirectional pins
-    Info (21061): Implemented 546 logic cells
+    Info (21060): Implemented 37 bidirectional pins
+    Info (21061): Implemented 1431 logic cells
     Info (21064): Implemented 96 RAM segments
     Info (21065): Implemented 1 PLLs
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 47 warnings
-    Info: Peak virtual memory: 4866 megabytes
-    Info: Processing ended: Tue Mar 03 17:37:01 2020
-    Info: Elapsed time: 00:00:10
-    Info: Total CPU time (on all processors): 00:00:21
+    Info (21062): Implemented 12 DSP elements
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 111 warnings
+    Info: Peak virtual memory: 4880 megabytes
+    Info: Processing ended: Wed Mar 04 17:18:34 2020
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:36
 
 

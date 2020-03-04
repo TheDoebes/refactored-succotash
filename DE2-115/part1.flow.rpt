@@ -1,5 +1,5 @@
 Flow report for part1
-Tue Mar 03 17:37:31 2020
+Wed Mar 04 17:19:06 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition
 
 
@@ -41,21 +41,21 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------------------------------------------------------------------+
 ; Flow Summary                                                                                     ;
 +------------------------------------+-------------------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 03 17:37:27 2020                       ;
+; Flow Status                        ; Successful - Wed Mar 04 17:19:02 2020                       ;
 ; Quartus Prime Version              ; 19.1.0 Build 670 09/22/2019 Patches 0.02std SJ Lite Edition ;
 ; Revision Name                      ; part1                                                       ;
 ; Top-level Entity Name              ; part1                                                       ;
 ; Family                             ; Cyclone IV E                                                ;
 ; Device                             ; EP4CE115F29C7                                               ;
 ; Timing Models                      ; Final                                                       ;
-; Total logic elements               ; 539 / 114,480 ( < 1 % )                                     ;
-;     Total combinational functions  ; 536 / 114,480 ( < 1 % )                                     ;
-;     Dedicated logic registers      ; 289 / 114,480 ( < 1 % )                                     ;
-; Total registers                    ; 294                                                         ;
+; Total logic elements               ; 1,424 / 114,480 ( 1 % )                                     ;
+;     Total combinational functions  ; 1,415 / 114,480 ( 1 % )                                     ;
+;     Dedicated logic registers      ; 335 / 114,480 ( < 1 % )                                     ;
+; Total registers                    ; 340                                                         ;
 ; Total pins                         ; 49 / 529 ( 9 % )                                            ;
 ; Total virtual pins                 ; 0                                                           ;
 ; Total memory bits                  ; 12,288 / 3,981,312 ( < 1 % )                                ;
-; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                                             ;
+; Embedded Multiplier 9-bit elements ; 12 / 532 ( 2 % )                                            ;
 ; Total PLLs                         ; 1 / 4 ( 25 % )                                              ;
 +------------------------------------+-------------------------------------------------------------+
 
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/03/2020 17:36:51 ;
+; Start date & time ; 03/04/2020 17:18:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; part1               ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id ;
 +-------------------------------------+----------------------------------------+---------------+-------------+------------+
-; COMPILER_SIGNATURE_ID               ; 123719801957568.158327501106392        ; --            ; --          ; --         ;
+; COMPILER_SIGNATURE_ID               ; 123719801957568.158336028926436        ; --            ; --          ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --            ; --          ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --            ; --          ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --            ; --          ; Top        ;
@@ -92,11 +92,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4866 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:21     ; 1.1                     ; 6739 MB             ; 00:00:55                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4703 MB             ; 00:00:03                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 5011 MB             ; 00:00:02                           ;
-; Total                ; 00:00:36     ; --                      ; --                  ; 00:01:21                           ;
+; Analysis & Synthesis ; 00:00:25     ; 1.0                     ; 4880 MB             ; 00:00:36                           ;
+; Fitter               ; 00:00:23     ; 1.1                     ; 6754 MB             ; 00:01:01                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4706 MB             ; 00:00:03                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.2                     ; 5018 MB             ; 00:00:03                           ;
+; Total                ; 00:00:54     ; --                      ; --                  ; 00:01:43                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

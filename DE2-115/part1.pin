@@ -143,8 +143,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AB17      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB18      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB19      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB20      :        :                   :         : 4         :                
-GPIO[2]                      : AB21      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[0]                      : AB22      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[2]                      : AB21      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[0]                      : AB22      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB23      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AB25      :        :                   :         : 5         :                
@@ -165,14 +165,14 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AC11      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC12      :        :                   :         : 3         :                
 GND                          : AC13      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC14      :        :                   :         : 3         :                
-GPIO[1]                      : AC15      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[1]                      : AC15      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : AC16      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC17      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC18      :        :                   :         : 4         :                
-GPIO[10]                     : AC19      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[10]                     : AC19      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : AC20      : gnd    :                   :         :           :                
-GPIO[4]                      : AC21      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[17]                     : AC22      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[4]                      : AC21      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[17]                     : AC22      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : AC23      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC24      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AC25      :        :                   :         : 5         :                
@@ -193,17 +193,17 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AD11      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD12      :        :                   :         : 3         :                
 VCCIO3                       : AD13      : power  :                   : 3.3V    : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD14      :        :                   :         : 3         :                
-GPIO[8]                      : AD15      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[8]                      : AD15      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : AD16      : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD17      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD18      :        :                   :         : 4         :                
-GPIO[12]                     : AD19      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[12]                     : AD19      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : AD20      : power  :                   : 3.3V    : 4         :                
-GPIO[6]                      : AD21      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[21]                     : AD22      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[6]                      : AD21      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[21]                     : AD22      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : AD23      : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD24      :        :                   :         : 4         :                
-GPIO[23]                     : AD25      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[23]                     : AD25      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AD28      :        :                   :         : 5         :                
@@ -221,17 +221,17 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AE11      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE12      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE13      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE14      :        :                   :         : 3         :                
-GPIO[9]                      : AE15      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[7]                      : AE16      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[9]                      : AE15      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[7]                      : AE16      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE17      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE18      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE19      :        :                   :         : 4         :                
-GPIO[30]                     : AE20      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[15]                     : AE21      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[18]                     : AE22      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[30]                     : AE20      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[15]                     : AE21      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[18]                     : AE22      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE23      :        :                   :         : 4         :                
-GPIO[27]                     : AE24      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[25]                     : AE25      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[27]                     : AE24      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[25]                     : AE25      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE26      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE27      :        :                   :         : 5         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AE28      :        :                   :         : 5         :                
@@ -249,18 +249,18 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AF11      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF12      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF13      :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF14      :        :                   :         : 3         :                
-GPIO[13]                     : AF15      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[11]                     : AF16      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[13]                     : AF15      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[11]                     : AF16      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF17      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF18      :        :                   :         : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF19      :        :                   :         : 4         :                
-GPIO[32]                     : AF20      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[19]                     : AF21      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[20]                     : AF22      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[32]                     : AF20      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[19]                     : AF21      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[20]                     : AF22      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF23      :        :                   :         : 4         :                
-GPIO[14]                     : AF24      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[16]                     : AF25      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[29]                     : AF26      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[14]                     : AF24      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[16]                     : AF25      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[29]                     : AF26      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 RESERVED_INPUT_WITH_WEAK_PULLUP : AF27      :        :                   :         : 5         :                
 GND                          : AF28      : gnd    :                   :         :           :                
 VCCIO2                       : AG1       : power  :                   : 3.3V    : 2         :                
@@ -284,11 +284,11 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AG18      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG19      :        :                   :         : 4         :                
 GND                          : AG20      : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AG21      :        :                   :         : 4         :                
-GPIO[26]                     : AG22      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[31]                     : AG23      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[26]                     : AG22      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[31]                     : AG23      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : AG24      : gnd    :                   :         :           :                
-GPIO[22]                     : AG25      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[35]                     : AG26      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[22]                     : AG25      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[35]                     : AG26      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : AG27      : gnd    :                   :         :           :                
 VCCIO5                       : AG28      : power  :                   : 2.5V    : 5         :                
 VCCIO3                       : AH2       : power  :                   : 3.3V    : 3         :                
@@ -311,11 +311,11 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : AH18      :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH19      :        :                   :         : 4         :                
 VCCIO4                       : AH20      : power  :                   : 3.3V    : 4         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : AH21      :        :                   :         : 4         :                
-GPIO[28]                     : AH22      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[34]                     : AH23      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[28]                     : AH22      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[34]                     : AH23      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : AH24      : power  :                   : 3.3V    : 4         :                
-GPIO[24]                     : AH25      : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[33]                     : AH26      : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[24]                     : AH25      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[33]                     : AH26      : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 VCCIO4                       : AH27      : power  :                   : 3.3V    : 4         :                
 VCCIO1                       : B1        : power  :                   : 3.3V    : 1         :                
 GND                          : B2        : gnd    :                   :         :           :                
@@ -836,8 +836,8 @@ RESERVED_INPUT_WITH_WEAK_PULLUP : Y12       :        :                   :      
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y13       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y14       :        :                   :         : 3         :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y15       :        :                   :         : 3         :                
-GPIO[5]                      : Y16       : input  : 3.3-V LVTTL       :         : 4         : Y              
-GPIO[3]                      : Y17       : input  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[5]                      : Y16       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
+GPIO[3]                      : Y17       : bidir  : 3.3-V LVTTL       :         : 4         : Y              
 GND                          : Y18       : gnd    :                   :         :           :                
 RESERVED_INPUT_WITH_WEAK_PULLUP : Y19       :        :                   :         : 4         :                
 VCCD_PLL4                    : Y20       : power  :                   : 1.2V    :           :                

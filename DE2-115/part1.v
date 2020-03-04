@@ -15,7 +15,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 	input AUD_ADCDAT;
 	output AUD_DACDAT;
 	// Arduino Serial, UART
-	input [35:0] GPIO;
+	inout [35:0] GPIO;
 
 	// Local wires.
 	wire read_ready, write_ready, read, write;
@@ -25,16 +25,22 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 	// Arduino serial local wires
 	wire [7:0] dial;
 	wire [23:0] scaleFactor;
+	reg [3:0] zeroByteL = 4'd0;
+	reg [11:0] zeroByteR = 12'd0;
 
 	/////////////////////////////////
 	// Logic
 	/////////////////////////////////
-
+	
+	//Set GPIO[3] as the logic-high reference value for GPI0[1]
+	assign GPIO[3] = 1'b1;
+	
+	// Set the read and write enable lines for the I2C module
 	assign read = read_ready && write_ready;
 	assign write = read_ready && write_ready;
 	
 	// Extend dial over the appropriate range to scale audio data
-	scaleFactor = {8'd0, dial, 8'd0};
+	assign scaleFactor = {zeroByteL, dial, zeroByteR};
 
 	always @(*)
 	begin
@@ -73,7 +79,7 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 	 	// inputs
 	 	CLOCK_50, 
 	 	reset, 
-	 	GPIO[0], 
+	 	GPIO[1], 
 	 	
 	 	// outputs
 	 	dial
