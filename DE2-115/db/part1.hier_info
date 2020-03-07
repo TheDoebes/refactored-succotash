@@ -1,6 +1,7 @@
 |part1
 CLOCK_50 => CLOCK_50.IN3
 CLOCK2_50 => CLOCK2_50.IN1
+KEY[0] => LEDG[0].DATAIN
 KEY[0] => reset.IN4
 SW[0] => ~NO_FANOUT~
 SW[1] => ~NO_FANOUT~
@@ -48,6 +49,7 @@ GPIO[32] <> <UNC>
 GPIO[33] <> <UNC>
 GPIO[34] <> <UNC>
 GPIO[35] <> <UNC>
+LEDG[0] <= KEY[0].DB_MAX_OUTPUT_PORT_TYPE
 
 
 |part1|UART_RX:uart_1

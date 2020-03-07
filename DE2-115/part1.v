@@ -1,11 +1,12 @@
 module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
-	AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT, GPIO);
+	AUD_DACLRCK, AUD_ADCLRCK, AUD_BCLK, AUD_ADCDAT, AUD_DACDAT, GPIO, LEDG);
 	
 	// I/O
 	// DE2-115 Signals
 	input CLOCK_50, CLOCK2_50;
 	input [0:0] KEY;
 	input [1:0] SW;
+	output [0:0] LEDG;
 	// I2C Audio/Video config interface
 	output I2C_SCLK;
 	inout I2C_SDAT;
@@ -34,6 +35,9 @@ module part1 (CLOCK_50, CLOCK2_50, KEY, SW, I2C_SCLK, I2C_SDAT, AUD_XCK,
 	
 	//Set GPIO[3] as the logic-high reference value for GPI0[1]
 	assign GPIO[3] = 1'b1;
+	
+	//Set LEDG0 as a debug LED for the reset button
+	assign LEDG[0] = KEY[0];
 	
 	// Set the read and write enable lines for the I2C module
 	assign read = read_ready && write_ready;

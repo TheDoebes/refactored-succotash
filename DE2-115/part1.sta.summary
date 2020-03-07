@@ -2,88 +2,64 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
-Slack : -45.211
-TNS   : -1158.342
-
-Type  : Slow 1200mV 85C Model Setup 'UART_RX:uart_1|tick'
-Slack : -2.846
-TNS   : -121.400
-
-Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
-Slack : 0.293
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 44.619
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'UART_RX:uart_1|tick'
-Slack : 0.385
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.402
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -3.000
-TNS   : -448.293
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'UART_RX:uart_1|tick'
-Slack : -3.000
-TNS   : -118.695
-
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK2_50'
-Slack : 18.337
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 94.398
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -40.793
-TNS   : -1032.036
-
-Type  : Slow 1200mV 0C Model Setup 'UART_RX:uart_1|tick'
-Slack : -2.535
-TNS   : -107.006
-
-Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.307
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 1.024
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Hold 'UART_RX:uart_1|tick'
-Slack : 0.338
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.491
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -3.000
-TNS   : -447.589
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'UART_RX:uart_1|tick'
-Slack : -3.000
-TNS   : -118.695
-
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
-Slack : 18.322
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 45.192
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
-Slack : -21.247
-TNS   : -440.206
-
-Type  : Fast 1200mV 0C Model Setup 'UART_RX:uart_1|tick'
-Slack : -0.855
-TNS   : -30.240
-
-Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
-Slack : 0.110
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.353
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'UART_RX:uart_1|tick'
-Slack : 0.172
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 94.977
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
-Slack : -3.000
-TNS   : -428.094
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.924
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'UART_RX:uart_1|tick'
-Slack : -1.000
-TNS   : -55.000
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.402
+TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK2_50'
-Slack : 17.924
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 47.561
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.181
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 96.955
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.501
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.284
 TNS   : 0.000
 
 ------------------------------------------------------------

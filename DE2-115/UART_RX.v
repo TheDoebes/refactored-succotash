@@ -23,6 +23,11 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 	reg [7:0] cache; // Caching samples before sending full words to DATA
 	reg [2:0] cacheIndex; // Track which bit we are sampling into cache	
 	reg parityBit; // store the parity of the cache register
+	
+	
+	// TODO refactor this mess to something more readable
+	// calculate the parity bit from the cache, assuming even parity
+	assign parityBit = cache[0]^cache[1]^cache[2]^cache[3]^cache[4]^cache[5]^cache[6]^cache[7]; 
 
 
 	// RX reader - Samples bitstream
@@ -98,8 +103,6 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 								
 								pointer <= pointer + 1; // and mark it as such
 								
-								// TODO fix this trash
-								parityBit <= cache[0]^cache[1]^cache[2]^cache[3]^cache[4]^cache[5]^cache[6]^cache[7]; // calculate the parity bit from the cache
 								
 								if (parityBit == RX) // If they match, the data is probably good so tranmit the update
 								begin
