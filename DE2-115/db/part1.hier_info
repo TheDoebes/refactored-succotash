@@ -127,7 +127,6 @@ RX => cache.DATAB
 RX => cache.DATAB
 RX => cache.DATAB
 RX => cache.DATAB
-RX => always0.IN1
 RX => pointer.OUTPUTSELECT
 RX => pointer.OUTPUTSELECT
 RX => pointer.OUTPUTSELECT

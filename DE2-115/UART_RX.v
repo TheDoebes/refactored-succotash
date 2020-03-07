@@ -103,10 +103,10 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 								pointer <= pointer + 1; // and mark it as such
 								
 								
-								if (parityBit == RX) // If they match, the data is probably good so tranmit the update
-								begin
+								//if (parityBit == RX) // If they match, the data is probably good so tranmit the update
+								//begin
 									DATA <= cache;
-								end
+								//end
 								// Otherwise leave the old data bit
 							end
 						else // otherwise we have sampled it already and we're just waiting for the next bit
