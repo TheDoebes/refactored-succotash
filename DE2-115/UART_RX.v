@@ -22,7 +22,7 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 	reg [4:0] pointer; // used to count tick before resampling
 	reg [7:0] cache; // Caching samples before sending full words to DATA
 	reg [2:0] cacheIndex; // Track which bit we are sampling into cache	
-	reg parityBit; // store the parity of the cache register
+	wire parityBit; // store the parity of the cache register
 	
 	
 	// TODO refactor this mess to something more readable
@@ -39,7 +39,6 @@ module UART_RX(CLK50MHz, RESET, RX, DATA);
 				pointer <= 0; // Set the number of ticks counted to zero
 				cache <= 0; // Empty the cache so old samples are not sent
 				cacheIndex <= 0; // Make sure we start refilling the cache from zero
-				parityBit <= 0; // Set correct parity for empty cache
 				
 				DATA <= 8'd0; // Empty the output register
 				

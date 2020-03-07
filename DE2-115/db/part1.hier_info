@@ -80,7 +80,6 @@ RESET => DATA[4]~reg0.ACLR
 RESET => DATA[5]~reg0.ACLR
 RESET => DATA[6]~reg0.ACLR
 RESET => DATA[7]~reg0.ACLR
-RESET => parityBit.ACLR
 RESET => cacheIndex[0].ACLR
 RESET => cacheIndex[1].ACLR
 RESET => cacheIndex[2].ACLR
